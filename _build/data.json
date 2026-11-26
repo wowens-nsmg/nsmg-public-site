@@ -1,0 +1,556 @@
+{
+ "COURSES": [
+  {
+   "n": 1,
+   "name": "Spine & Spinal Lesions",
+   "range": "Modules 1–6",
+   "blurb": "Spine MRI from the ground up: degenerative disease, the three compartments of spinal lesions, and the carotid space."
+  },
+  {
+   "n": 2,
+   "name": "Emergency & Brain Neuroimaging",
+   "range": "Modules 7–12",
+   "blurb": "Emergency presentations of the head, neck, spine and brain, demyelinating disease, nerve entrapment, brain tumors and brain anatomy."
+  },
+  {
+   "n": 3,
+   "name": "Neurovascular & Musculoskeletal",
+   "range": "Modules 13–18",
+   "blurb": "Neurovascular imaging, then the hip, shoulder and knee, closing with the pediatric musculoskeletal patient."
+  }
+ ],
+ "MODULES": [
+  {
+   "t": "MRI Mastery Series: Spine",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "4 hr 17 min · 30 videos",
+   "h": 15,
+   "d": "27 rare and challenging spine MRI cases, each reviewed with neurosurgeon-turned-neuroradiologist Malcolm Shupeck, MD."
+  },
+  {
+   "t": "MRI Mastery Series: Degenerative Joint Disease (DJD)",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "3 hr 18 min · 36 videos",
+   "h": 15,
+   "d": "Current disc nomenclature, common herniation locations, surgical implications of disc injury, and more than a dozen DJD case reviews."
+  },
+  {
+   "t": "MRI Mastery Series: Intradural Intramedullary Spinal Lesions",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "2 hr 51 min · 43 videos",
+   "h": 15,
+   "d": "Part one of the spinal lesions trilogy.",
+   "topics": [
+    "Multiple sclerosis",
+    "Von Hippel-Lindau disease",
+    "Lipoma",
+    "Ependymoma",
+    "Vacuolar myelopathy",
+    "Spinal ADEM",
+    "Cysticercosis",
+    "Kawasaki disease",
+    "Dural arteriovenous fistulas"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: Intradural Extramedullary Lesions (IDEM)",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "2 hr 17 min · 42 videos",
+   "h": 15,
+   "d": "Part two of the spinal lesions trilogy, focused largely on benign entities.",
+   "topics": [
+    "Schwannomas",
+    "Neurofibromatosis types 1 & 2",
+    "Meningiomas",
+    "Hemangioblastomas",
+    "Lipoma",
+    "Dural ectasia"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: Extradural Lesions",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "1 hr 47 min · 34 videos",
+   "h": 12,
+   "d": "Part three: extradural etiologies that compress the dura and mimic intradural lesions.",
+   "topics": [
+    "Subdural & epidural hematomas",
+    "Discitis & osteomyelitis",
+    "Spinal infections",
+    "Hematopoiesis",
+    "Congenital / developmental lesions"
+   ]
+  },
+  {
+   "t": "Imaging Mastery Series: The Carotid Space",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "3 hr 19 min · 60 videos",
+   "h": 15,
+   "d": "Carotid space disease and displacement patterns, head and neck anatomy, key differentials and clinical pearls."
+  },
+  {
+   "t": "Emergency Neuroimaging: Head, Neck & Spine",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "7 hr 30 min · 115 videos",
+   "h": 18,
+   "d": "The most common emergency department presentations, with 45 DICOM cases and pre- and post-tests.",
+   "topics": [
+    "Orbital trauma / inflammation",
+    "Facial & neck trauma",
+    "Sore throat, pain & fever",
+    "Neck mass",
+    "Cervical spine trauma",
+    "Fever with back pain"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: Demyelinating Disease",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "4 hr 1 min · 46 videos",
+   "h": 15,
+   "d": "Anatomy and imaging technique for demyelinating disorders, followed by review of nearly 30 cases."
+  },
+  {
+   "t": "Emergency Neuroimaging: Brain",
+   "i": "David M. Yousem, MD, MBA",
+   "len": "7 hr · 91 videos",
+   "h": 20,
+   "d": "Emergency brain presentations with 38 DICOM cases and pre- and post-tests.",
+   "topics": [
+    "New neurologic deficit",
+    "Head trauma",
+    "Worst headache of life",
+    "Found down",
+    "Fever & seizures",
+    "Post-VP shunt lethargy"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: Nerve Imaging — Entrapment Neuropathy & Tumors",
+   "i": "Megan K. Mills, MD",
+   "len": "1 hr 49 min · 43 videos",
+   "h": 12,
+   "d": "Upper-extremity nerve MRI: protocol, phases and patterns of denervation, nerve pathway anatomy, and impingement, trauma, inflammatory and tumor cases."
+  },
+  {
+   "t": "MRI Mastery Series: Brain Tumors",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "1 hr 49 min · 29 videos",
+   "h": 12,
+   "d": "Meningiomas and non-glial tumors: protocols, anatomic correlation and case review with neuroradiologist Benjamin LeSar, MD."
+  },
+  {
+   "t": "MRI Mastery Series: Brain Anatomy",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "2 hr 56 min · 71 videos",
+   "h": 15,
+   "d": "Surface anatomy, sulci and gyri, then each of the twelve cranial nerves."
+  },
+  {
+   "t": "MRI Mastery Series: Neurovascular",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "3 hr 10 min · 33 videos",
+   "h": 15,
+   "d": "Time-sensitive neurovascular cases, from critical to benign, with management insight from Malcolm Shupeck, MD."
+  },
+  {
+   "t": "MRI Mastery Series: Hip",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "2 hr 15 min · 25 videos",
+   "h": 15,
+   "d": "Hip MRI anatomy and diagnosis.",
+   "topics": [
+    "Labral tears",
+    "Femoroacetabular impingement (cam & pincer)",
+    "Avascular necrosis",
+    "Athletic pubalgia",
+    "Legg-Calvé-Perthes disease",
+    "SCFE",
+    "Piriformis syndrome",
+    "Snapping tendon syndrome"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: SLAP Lesions",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "1 hr 17 min · 21 videos",
+   "h": 12,
+   "d": "SLAP lesions types I–X defined through diagrams, surgical video and MRI case review."
+  },
+  {
+   "t": "MRI Mastery Series: Shoulder",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "6 hr 40 min · 68 videos",
+   "h": 20,
+   "d": "Shoulder MRI anatomy and diagnosis.",
+   "topics": [
+    "Rotator cuff tears",
+    "Bankart & Hill-Sachs lesions",
+    "HAGL / BHAGL / RHAGL",
+    "ALPSA & POLPSA",
+    "Glenohumeral ligaments",
+    "Adhesive capsulitis",
+    "Impingement",
+    "Biceps pulley"
+   ]
+  },
+  {
+   "t": "MRI Mastery Series: Knee",
+   "i": "Stephen J. Pomeranz, MD",
+   "len": "7 hr 27 min · 89 videos",
+   "h": 20,
+   "d": "Knee MRI anatomy and diagnosis.",
+   "topics": [
+    "ACL / PCL",
+    "Meniscal tears (bucket handle, root, radial)",
+    "Posterolateral & posteromedial corners",
+    "Patellar stabilizers & MPFL",
+    "Morel-Lavallée lesion",
+    "Osteochondritis dissecans",
+    "Segond fracture"
+   ]
+  },
+  {
+   "t": "Imaging Mastery Series: Pediatric MSK",
+   "i": "Mahesh Thapa, MD, MEd, FAAP",
+   "len": "4 hr 8 min · 71 videos",
+   "h": 15,
+   "d": "Pediatric imaging is not adult imaging in miniature: growth plates, ossification centers, and cartilage injury in children."
+  }
+ ],
+ "BIBLIOGRAPHY": [
+  [
+   "Zhu, Wei, Xuxia He, Kaiyuan Cheng, Linjie Zhang, Di Chen, Xiao Wang, Guixing Qiu, Xu Cao, and Xisheng Weng. \"Ankylosing spondylitis: etiology, pathogenesis, and treatments.\" Bone research 7, no. 1 (2019): 1-16.",
+   "https://rarediseases.org/rare-diseases/neuromyelitis-optica/",
+   "Malone, J. B., Bevan, P. J., Lewis, T. J., Nelson, A. D., Blaty, D. E., & Kahan, M. E. (2018). Incidence of spinal epidural lipomatosis in patients with spinal stenosis. Journal of orthopaedics, 15(1), 36-39.",
+   "Yang, C., Ma, Y., Tian, A., Yu, J., Chen, S., Peng, C., ... & Zhang, H. (2022). Long-term outcomes and prognostic factors in patients with treated spinal dural arteriovenous fistulas: a prospective cohort study. BMJ open, 12(1), e047390.",
+   "Katti, G., Ara, S. A., & Shireen, A. (2011). Magnetic resonance imaging (MRI)–A review. International journal of dental clinics, 3(1), 65-70.",
+   "Canella, C., Schau, B., Ribeiro, E., Sbaffi, B., & Marchiori, E. (2013). MRI in seronegative spondyloarthritis: imaging features and differential diagnosis in the spine and sacroiliac joints. American Journal of Roentgenology, 200(1), 149-157.",
+   "Morello, R. (2018). Osteogenesis imperfecta and therapeutics. Matrix Biology, 71, 294-312.",
+   "Dowdell, J., Brochin, R., Kim, J., Overley, S., Oren, J., Freedman, B., & Cho, S. (2018). Postoperative spine infection: diagnosis and management. Global spine journal, 8(4_suppl), 37S-43S.",
+   "Jurga, S., Szymańska-Adamcewicz, O., Wierzchołowski, W., Pilchowska-Ujma, E., & Urbaniak, Ł. (2020). Spinal adhesive arachnoiditis: three case reports and review of literature. Acta Neurologica Belgica, 1-7.",
+   "Santillan, A., Nacarino, V., Greenberg, E., Riina, H. A., Gobin, Y. P., & Patsalides, A. (2012). Vascular anatomy of the spinal cord. Journal of neurointerventional surgery, 4(1), 67-74."
+  ],
+  [
+   "Liu, Z., Su, Z., Wang, M., Chen, T., Cui, Z., Chen, X., ... & Lu, H. (2022). Computerized characterization of spinal structures on MRI and clinical significance of 3D reconstruction of lumbosacral intervertebral foramen. Pain Physician, 25(1), E27.",
+   "Kasch, R., Truthmann, J., Hancock, M. J., Maher, C. G., Otto, M., Nell, C., ... & Schmidt, C. O. (2022). Association of lumbar MRI findings with current and future back pain in a population-based cohort study. Spine, 47(3), 201-211.",
+   "Mallio, C. A., Vadalà, G., Russo, F., Bernetti, C., Ambrosio, L., Zobel, B. B., ... & Denaro, V. (2022). Novel Magnetic Resonance Imaging Tools for the Diagnosis of Degenerative Disc Disease: A Narrative Review. Diagnostics, 12(2), 420.",
+   "Hoboubati, H., Khoshbin, M., Kargar, A., Halvani, G., Ahmadieh, M., Madvari, R. F., & Bidel, H. (2022). Study of Risk Factors Effects Recurrence of Lumbar Disc Herniation (LDH) after Open Spine Surgery. Novelty in Biomedicine, 10(1).",
+   "Tamai, K., Terai, H., Hoshino, M., Yabu, A., Tabuchi, H., Sasaki, R., & Nakamura, H. (2022). A deep learning algorithm to identify cervical ossification of posterior longitudinal ligaments on radiography. Scientific Reports, 12(1), 2113.",
+   "Wang, Y. D., Ru-Na, A., Xu, Y. Y., Li, Z. J., Jin, F., Wu, C., ... & Li, X. H. (2022). Three-dimensional digital measurement of the facet joint in normal individual and lumbar intervertebral disc herniation patients aged 13–18 years. Asian Journal of Surgery, 45(1), 269-276.",
+   "Atalay, B., Saritepe, F., Topcam, A., Guclu, H., & Gurbuz, M. S. (2022). Evaluation of the Association between Lumbar Spinal Stenosis and Lumbar Subcutaneous Fat Tissue Thickness by MRI: A Novel Perspective. Group, 5(S1), 1.",
+   "Ammendolia, C., Hofkirchner, C., Plener, J., Bussières, A., Schneider, M. J., Young, J. J., ... & Ornelas, J. (2022). Non-operative treatment for lumbar spinal stenosis with neurogenic claudication: an updated systematic review. BMJ open, 12(1), e057724.",
+   "Spivak, J. M., Zigler, J. E., Philipp, T., Janssen, M., Darden, B., & Radcliff, K. (2022). Segmental motion of cervical arthroplasty leads to decreased adjacent-level degeneration: analysis of the 7-year postoperative results of a multicenter randomized controlled trial. International Journal of Spine Surgery, 16(1), 186-193.",
+   "Vigeland, M. D., Flåm, S. T., Vigeland, M. D., Espeland, A., Kristoffersen, P. M., Vetti, N., ... & Lie, B. A. (2022). Correlation between gene expression and MRI STIR signals in patients with chronic low back pain and Modic changes indicates immune involvement. Scientific Reports, 12(1), 215."
+  ],
+  [
+   "Baral, A., Gyawali, R., Upreti, D., Mishra, A., & Gupta, A. K. (2021). Acute Disseminated Encephalomyelitis: Psychiatric Presentation of a Rare Diagnosis. Innovations in Clinical Neuroscience, 18(7-9), 44.",
+   "Mazahir, F. A., Al Saqqa, A., Magzoub, A., & Al Sabbah, M. A. (2022). Rethinking the Typical Diagnostic and Therapeutic Challenges of Kawasaki Disease. Dubai Medical Journal, 5(1), 23-29.",
+   "Banga, M. S., Sandeep, B. V., Kishan, A., Arun, M. A., Dev, A. H., & Devabhakthuni, R. B. (2022). Spinal cord tumors—our 5-year experience. Indian Journal of Neurosurgery, 11(01), 061-066.",
+   "Coco, D., & Leanza, S. (2022). Von Hippel-Lindau syndrome: Medical syndrome or surgical syndrome? A surgical perspective. Journal of kidney cancer and VHL, 9(1), 27.",
+   "Uwishema, O., Ayoub, G., Badri, R., Onyeaka, H., Berjaoui, C., Karabulut, E., ... & Chalhoub, E. (2022). Neurological disorders in HIV: hope despite challenges. Immunity, inflammation and disease, 10(3), e591.",
+   "Inojosa, H., Proschmann, U., Akgün, K., & Ziemssen, T. (2022). The need for a strategic therapeutic approach: multiple sclerosis in check. Therapeutic Advances in Chronic Disease, 13, 20406223211063032.",
+   "Zhang, H., Zhu, K., Wang, J., & Lv, X. (2022). The use of a new classification in endovascular treatment of dural arteriovenous fistulas. Neuroscience Informatics, 2(2), 100047.",
+   "Yang, C., Liu, T., Wu, J., Xie, J., Yu, T., Jia, W., ... & Xu, Y. (2022). Spinal cysticercosis: a rare cause of myelopathy. BMC neurology, 22(1), 1-11.",
+   "Massaad, E., Ha, Y., Shankar, G. M., & Shin, J. H. (2022). Clinical prediction modeling in intramedullary spinal tumor surgery. In Machine Learning in Clinical Neuroscience: Foundations and Applications (pp. 333-339). Springer International Publishing. CHAPTER 37 ONLY"
+  ],
+  [
+   "Vargas, M. I., Boto, J., & Meling, T. R. (2021). Imaging of the spine and spinal cord: an overview of magnetic resonance imaging (MRI) techniques. Revue neurologique, 177(5), 451-458.",
+   "Tamura, R. (2021). Current understanding of neurofibromatosis type 1, 2, and schwannomatosis. International journal of molecular sciences, 22(11), 5850.",
+   "Hyseni, F., Harizi, E., Blanco, R., Bido, R., Pichardo, J., Rahman, M., ... & Musa, J. (2022). Lumbar radiculopathy associated radicular schwannoma: A case report and literature review. Radiology Case Reports, 17(4), 1251-1255.",
+   "Takashima, H., Takebayashi, T., Yoshimoto, M., Onodera, M., Terashima, Y., Iesato, N., ... & Yamashita, T. (2018). Differentiating spinal intradural-extramedullary schwannoma from meningioma using MRI T 2 weighted images. The British Journal of Radiology, 91(1092), 20180262.",
+   "Lee, J. H., Kim, H. S., Yoon, Y. C., Cha, M. J., Lee, S. H., & Kim, E. S. (2020). Differentiating between spinal schwannomas and meningiomas using MRI: A focus on cystic change. Plos one, 15(5), e0233623.",
+   "Feletti, A., Boaro, A., Giampiccolo, D., Casoli, G., Moscolo, F., Ferrara, M., ... & Pavesi, G. (2022). Spinal hemangioblastomas: analysis of surgical outcome and prognostic factors. Neurosurgical Review, 1-17.",
+   "Dasarju, V. K., Sree, S., Kikkeri, M. S., Shireesha, B., Pallavi, N., & Kumar, C. S. (2020). Magnetic resonance imaging in spinal tumors.",
+   "Jia, J., Wei, Q., Wu, T., He, D., & Cheng, X. (2018). Two cases in which 3D MRI was used to differentiate between a disc mass that mimics a tumor and neurinoma. BMC Musculoskeletal Disorders, 19(1), 1-6.",
+   "Koeller, K. K., & Shih, R. Y. (2019). Intradural extramedullary spinal neoplasms: radiologic-pathologic correlation. Radiographics, 39(2), 468-490.",
+   "Stino, A. M., Naddaf, E., Dyck, P. J., & Dyck, P. J. B. (2021). Chronic inflammatory demyelinating polyradiculoneuropathy—Diagnostic pitfalls and treatment approach. Muscle & nerve, 63(2), 157-169."
+  ],
+  [
+   "Stino, A. M., Naddaf, E., Dyck, P. J., & Dyck, P. J. B. (2021). Chronic inflammatory demyelinating polyradiculoneuropathy—Diagnostic pitfalls and treatment approach. Muscle & nerve, 63(2), 157-169.",
+   "Marrone, S., Kharbat, A. F., Palmisciano, P., Umana, G. E., Haider, A. S., Iacopino, D. G., ... & Scalia, G. (2022). Thoracic spinal extradural arachnoid cyst: A case report and literature review. Surgical Neurology International, 13.",
+   "Albadr, F. B. (2021). Solitary osteochondroma affecting the rib and adjacent vertebral body: a case with atypical radiology features. Radiology Case Reports, 16(8), 2038-2042.",
+   "Boudabbous, S., Paulin, E. N., Delattre, B. M. A., Hamard, M., & Vargas, M. I. (2021). Spinal disorders mimicking infection. Insights into Imaging, 12(1), 1-12.",
+   "Weihe, R., Taghlabi, K., Lowrance, M., Reeves, A., Jackson, S. R., Burton, D. C., & El Atrouni, W. (2022, March). Culture yield in the diagnosis of native vertebral osteomyelitis: a single tertiary center retrospective case series with literature review. In Open Forum Infectious Diseases (Vol. 9, No. 3, p. ofac026). US: Oxford University Press.",
+   "Singh, K. S., Robindro, P., Pusparani, O., Devi, D. N. L., & West, I. (2022). MRI Evaluation of Spinal TB: A Cross-Sectional Study. European Journal of Molecular & Clinical Medicine (EJMCM), 9(01), 2022.",
+   "Arpitha, A., & Rangarajan, L. (2021). Computational analysis of vertebral body for compression fracture using texture and shape features. International Journal of Cognitive Informatics and Natural Intelligence (IJCINI), 15(4), 1-24.",
+   "Pruitt, A. A. (2021). Neoplastic myelopathies. CONTINUUM: Lifelong Learning in Neurology, 27(1), 121-142.",
+   "Bacher, S., Hajdu, S. D., Maeder, Y., Dunet, V., Hilbert, T., & Omoumi, P. (2021). Differentiation between benign and malignant vertebral compression fractures using qualitative and quantitative analysis of a single fast spin echo T2-weighted Dixon sequence. European Radiology, 31(12), 9418-9427.",
+   "Tu, C. H., Chiu, Y. P., Ji, H. R., & Chiu, C. D. (2021). Primary osseous chondrosarcoma in the lumbar spine: case report and literature review with analysis. Journal of International Medical Research, 49(11), 03000605211058890.",
+   "Parmar, G., Soin, P., Sharma, P., French, C., Han, B., & Kochar, P. S. (2022). Sequestered disc herniation mimicking psoas abscess: A rare case report. Radiology Case Reports, 17(1), 223-226.",
+   "Laouar, F., Bouzerara, O., Sadaoui, B., & Boublata, L. (2022). Spontaneous spinal subdural hematoma associated with intracranial idiopathic subarachnoid hemorrhage. A case report and review of the literature. Interdisciplinary Neurosurgery, 28, 101458.",
+   "Arvind, V., Nevzati, E., Ghaly, M., Nasim, M., Farshad, M., Guggenberger, R., ... & Spiessberger, A. (2021). Primary extradural tumors of the spinal column: A comprehensive treatment guide for the spine surgeon based on the 5th Edition of the World Health Organization bone and soft-tissue tumor classification. Journal of Craniovertebral Junction & Spine, 12(4), 336."
+  ],
+  [
+   "Abbasi, A., & Khan, M. A. (2020). Carotidynia.",
+   "Bridwell, R., Gottlieb, M., Koyfman, A., & Long, B. (2021). Diagnosis and management of Ludwig's angina: An evidence-based review. The American journal of emergency medicine, 41, 1-5.",
+   "Iqbal, R., Alom, S., BinSaeid, J., & Harky, A. (2021). Loeys–Dietz syndrome pathology and aspects of cardiovascular management: A systematic review. Vascular, 29(1), 3-14.",
+   "Montes, D., & Romero, J. M. (2021). Imaging of nonatheromatous carotid artery disease. Clinical and Translational Neuroscience, 5(1), 2514183X211014511.",
+   "Bernardes, M. N. D., Cascudo, N. C. M., El Cheikh, M. R., Gonçalves, V. F., Lamounier, P., Ramos, H. V. L., & Costa, C. C. (2021). Aberrant common and internal carotid arteries and their surgical implications: a case report. Brazilian Journal of Otorhinolaryngology, 87, 366-369.",
+   "Borges, A., Ramalho, S., & Ferreira, L. (2021). Common carotid artery trifurcation: a potentially dangerous anatomical variant. BMJ Case Reports, 14(2).",
+   "Valerio, L., Zane, F., Sacco, C., Granziera, S., Nicoletti, T., Russo, M., ... & Barco, S. (2021). Patients with Lemierre syndrome have a high risk of new thromboembolic complications, clinical sequelae and death: an analysis of 712 cases. Journal of internal medicine, 289(3), 325-339.",
+   "Chengazi, H. U., & Bhatt, A. A. (2019). Pathology of the carotid space. Insights into imaging, 10, 1-16."
+  ],
+  [
+   "Okunlola, A. I., Abiola, P. O., Babalola, O. F., & Achebe, C. C. (2021). Cervical spine computed tomography motion artifact mimicking spine injury in a patient with severe head injury. Surgical Neurology International, 12.",
+   "Liberman, A. L., Zhang, H., Rostanski, S. K., Cheng, N. T., Esenwa, C. C., Haranhalli, N., ... & Prabhakaran, S. (2021). Cost‐effectiveness of advanced neuroimaging for transient and minor neurological events in the emergency department. Journal of the American Heart Association, 10(12), e019001.",
+   "Lacorzana, J., Rocha-de-Lossada, C., & Ortiz-Perez, S. (2021). A tricky case of unilateral orbital inflammation: carotid cavernous fistula in Graves-Basedow disease. Romanian Journal of Ophthalmology, 65(2), 201.",
+   "Epstein, N. (2020). Diagnosis, and treatment of cervical epidural abscess and/or cervical vertebral osteomyelitis with or without retropharyngeal abscess; a review. Surgical Neurology International, 11.",
+   "Sheynin, S., Wolf, L., Ben-Zion, Z., Sheynin, J., Reznik, S., Keynan, J. N., ... & Liberzon, I. (2021). Deep learning model of fMRI connectivity predicts PTSD symptom trajectories in recent trauma survivors. Neuroimage, 238, 118242.",
+   "Luciani, M., Negro, A., Spuntarelli, V., Bentivegna, E., & Martelletti, P. (2021). Evaluating and managing severe headache in the emergency department. Expert Review of Neurotherapeutics, 21(3), 277-285.",
+   "Krithika, C., Sreedevi, J., Sivapathasundharam, B., & Nithya, V. R. (2020). Benign lymphoepithelial lesion of the minor salivary gland–A rare presentation as a palatal swelling. Journal of Oral and Maxillofacial Pathology: JOMFP, 24(Suppl 1), S33.",
+   "Sporns, P. B., Niederstadt, T., Heindel, W., Raschke, M. J., Hartensuer, R., Dittrich, R., & Hanning, U. (2019). Imaging of spontaneous and traumatic cervical artery dissection: comparison of typical CT angiographic features. Clinical Neuroradiology, 29, 269-275.",
+   "Cellina, M., Cè, M., Marziali, S., Irmici, G., Gibelli, D., Oliva, G., & Carrafiello, G. (2022). Computed tomography in traumatic orbital emergencies: a pictorial essay—imaging findings, tips, and report flowchart. Insights into Imaging, 13(1), 4.",
+   "Moyron, R. B., Vallejos, P. A., Fuller, R. N., Dean, N., & Wall, N. R. (2021). Neuroimaging and advanced research techniques may lead to improved outcomes in military members suffering from traumatic brain injury. Trauma Surgery & Acute Care Open, 6(1), e000608.",
+   "Bravar, G., Luchesa Smith, A., Siddiqui, A., & Lim, M. (2021). Acute myelopathy in childhood. Children, 8(11), 1055.",
+   "Khoujah, D., & Cobb, M. J. (2021). Neurologic emergencies at the extremes of age. Emergency Medicine Clinics, 39(1), 47-65.",
+   "Mallon, S., Kwiecien, J. M., & Karis, J. P. (2021). Imaging of neurotrauma in acute and chronic settings. Current Neuropharmacology, 19(8), 1178.",
+   "Shi, J., Teng, J., Du, X., & Li, N. (2021). Multi-modal analysis of resting-state fMRI data in mTBI patients and association with neuropsychological outcomes. Frontiers in Neurology, 12, 639760.",
+   "Rivas-García, A., Ferrero-García-Loygorri, C., González-Pinto, L. C., Mora-Capín, A. A., Lorente-Romero, J., & Vázquez-López, P. (2022). Simple and complex febrile seizures: is there such a difference? Management and complications in an emergency department. Neurología (English Edition), 37(5), 317-324.",
+   "Mantokoudis, G., Wyss, T., Zamaro, E., Korda, A., Wagner, F., Sauter, T. C., ... & Caversaccio, M. D. (2021). Stroke prediction based on the spontaneous nystagmus suppression test in dizzy patients: a diagnostic accuracy study. Neurology, 97(1), e42-e51.",
+   "Kim, Y. J., & Yoo, I. H. (2021). Orbital Myositis Mimicking Status Migrainosus. Annals of Child Neurology, 29(4), 173-175.",
+   "Shope, C., Alshareef, M., Larrew, T., Bolling, C., Reagan, J., Yazdani, M., ... & Eskandari, R. (2021). Utility of a pediatric fast magnetic resonance imaging protocol as surveillance scanning for traumatic brain injury. Journal of Neurosurgery: Pediatrics, 27(4), 475-481.",
+   "Massaad, E., Shin, J. H., & Gibbs, W. N. (2021). The prognostic role of magnetic resonance imaging biomarkers in mild traumatic injury. JAMA network open, 4(3), e211824-e211824.",
+   "El Zahran, T., El Hadi, D., Mostafa, H., Mansour, H., Hashim, I., Tahhan, S., & Ghannam, A. B. (2022). The Yield of Neuroimaging in Patients Presenting to the Emergency Department with Isolated Neuro-ophthalmological Complaints.",
+   "de Wit, K., Mercuri, M., Clayton, N., Worster, A., Mercier, E., Emond, M., ... & Parpia, S. (2021). Which older emergency patients are at risk of intracranial bleeding after a fall? A protocol to derive a clinical decision rule for the emergency department. BMJ open, 11(7), e044800.",
+   "Alonso, M. V., Contreras, C. U., Tascón, Á. D., Raya, P. G., & de Gracia, M. M. (2019). Traumatic injury of the petrous part of the temporal bone: keys for reporting a complex diagnosis. Radiología (English Edition), 61(3), 204-214.",
+   "Baškytė, A. M., Kavaliauskaitė, A., Lukoševičius, S., & Neisser, C. B. (2021). Influence of risk factors on size and localization of infrarenal abdominal aortic aneurysms. RADIOLOGY UPDATE, 6.",
+   "Sjeklocha, L., & Gatz, J. D. (2021). Traumatic injuries to the spinal cord and peripheral nervous system. Emergency Medicine Clinics, 39(1), 1-28."
+  ],
+  [
+   "Chabriat, H., & Bousser, M. G. (2007). Neuropsychiatric manifestations in CADASIL. Dialogues in clinical neuroscience.",
+   "Athavale, V. A. (2022). Application of artificial intelligence in magnetic resonance imaging to reduce gadolinium accumulation in patients with multiple sclerosis: A review: https://doi.org/10.52152/spr/2022.157. Science Progress and Research (SPR), 2(1), 478-490.",
+   "Hurtado Rúa, S. M., Kaunzner, U. W., Pandya, S., Sweeney, E., Tozlu, C., Kuceyeski, A., ... & Gauthier, S. A. (2022). Lesion features on magnetic resonance imaging discriminate multiple sclerosis patients. European journal of neurology, 29(1), 237-246.",
+   "McDowell, A. R., Petrova, N., Carassiti, D., Miquel, M. E., Thomas, D. L., Barker, G. J., ... & Wood, T. C. (2022). High‐resolution quantitative MRI of multiple sclerosis spinal cord lesions. Magnetic Resonance in Medicine, 87(6), 2914-2921.",
+   "Scanderbeg, A. C., Tomaiuolo, F., Sabatini, U., Nocentini, U., Grasso, M. G., & Caltagirone, C. (2000). Demyelinating plaques in relapsing-remitting and secondary-progressive multiple sclerosis: assessment with diffusion MR imaging. American journal of neuroradiology, 21(5), 862-868.",
+   "Kreiter, D. J., van den Hurk, J., Wiggins, C. J., Hupperts, R. M., & Gerlach, O. H. (2022). Ultra-high field spinal cord MRI in multiple sclerosis: Where are we standing? A literature review. Multiple Sclerosis and Related Disorders, 57, 103436."
+  ],
+  [
+   "Briest, R. C., Cheung, A. K., Kandula, T., Cardamone, M., Pillai, S. C., Sampaio, H., ... & Andrews, P. I. (2023). Urgent computed tomography angiography in paediatric stroke. Developmental Medicine & Child Neurology, 65(1), 126-135.",
+   "Tahir, R. A., Haider, S., Kole, M., Griffith, B., & Marin, H. (2019). Anterior cerebral artery: variant anatomy and pathology. Journal of vascular and interventional neurology, 10(3), 16.",
+   "Li, K. H. C., Jesuthasan, A., Kui, C., Davies, R., Tse, G., & Lip, G. Y. (2021). Acute ischemic stroke management: concepts and controversies. A narrative review. Expert Review of Neurotherapeutics, 21(1), 65-79.",
+   "Nguyen, T. N., Abdalkader, M., Nagel, S., Qureshi, M. M., Ribo, M., Caparros, F., ... & Nogueira, R. G. (2022). Noncontrast computed tomography vs computed tomography perfusion or magnetic resonance imaging selection in late presentation of stroke with large-vessel occlusion. JAMA neurology, 79(1), 22-31.",
+   "Knol, W. G., Simon, J., Den Harder, A. M., Bekker, M. W., Suyker, W. J., de Heer, L. M., ... & CRICKET investigators. (2021). Effect of routine preoperative screening for aortic calcifications using noncontrast computed tomography on stroke rate in cardiac surgery: the randomized controlled CRICKET study. European Radiology, 1-9.",
+   "Feyen, L., Haage, P., Freyhardt, P., Schott, P., Katoh, M., Blockhaus, C., & Melber, K. (2022). Thin Slice Unenhanced Brain CT Can Detect Aneurysms Larger than 7 mm. Journal of the Belgian Society of Radiology, 106(1).",
+   "Weyland, C. S., Papanagiotou, P., Schmitt, N., Joly, O., Bellot, P., Mokli, Y., ... & Herweh, C. (2022). Hyperdense artery sign in patients with acute ischemic stroke–automated detection with artificial intelligence-driven software. Frontiers in Neurology, 13, 807145.",
+   "Warren, M. L., & Ruppert, S. D. (2011). Ischemic Middle Cerebral Artery Stroke: A Case Study. Critical care nursing quarterly, 34(3), 218-226.",
+   "Walton, M., Hodgson, R., Eastwood, A., Harden, M., Storey, J., Hassan, T., ... & Wade, R. (2022). Management of patients with sudden onset severe headache presenting to the Emergency Department: A systematic review of diagnostic strategies for ruling out subarachnoid haemorrhage.",
+   "Chen, X., Lin, S., Zhang, X., Hu, S., & Wang, X. (2022). Prognosis with non-contrast CT and CT Perfusion imaging in thrombolysis-treated acute ischemic stroke. European Journal of Radiology, 149, 110217.",
+   "Walton, M., Hodgson, R., Eastwood, A., Harden, M., Storey, J., Hassan, T., ... & Wade, R. (2022). Management of patients presenting to the emergency department with sudden onset severe headache: systematic review of diagnostic accuracy studies. Emergency Medicine Journal, 39(11), 818-825.",
+   "Wenceslau, C. F., McCarthy, C. G., Earley, S., England, S. K., Filosa, J. A., Goulopoulou, S., ... & Webb, R. C. (2021). Guidelines for the measurement of vascular function and structure in isolated arteries and veins. American Journal of Physiology-Heart and Circulatory Physiology, 321(2), H77-H111.",
+   "Harrou, F., Dairi, A., Kadri, F., & Sun, Y. (2022). Effective forecasting of key features in hospital emergency department: Hybrid deep learning-driven methods. Machine Learning with Applications, 7, 100200.",
+   "Upadhyay, U., Ranjan, M., Golla, S., Tanamala, S., Sreenivas, P., Chilamkurthy, S., ... & Tarpley, J. (2022, October). Deep-ASPECTS: A Segmentation-Assisted Model for Stroke Severity Measurement. In European Conference on Computer Vision (pp. 330-339). Cham: Springer Nature Switzerland."
+  ],
+  [
+   "Kesserwani, H., Faulkner, A., Kesserwani, H. N., & Adriana, F. (2021). Magnetic resonance neurography (MRN) of the brachial plexus: a case of parsonage turner syndrome and a basic review of imaging of the brachial plexus. Cureus, 13(5).",
+   "Belakhoua, S. M., & Rodriguez, F. J. (2021). Diagnostic pathology of tumors of peripheral nerve. Neurosurgery, 88(3), 443.",
+   "Yoshida, T., Suwazono, S., Sueyoshi, T., Izumi, Y., & Nodera, H. (2021). Diagnostic usefulness of denervation edema in the multifidus muscles using 3‐Tesla magnetic resonance imaging in cervical radiculopathy. Muscle & Nerve, 63(3), 365-370.",
+   "Leider, J. D., Derise, O. C., Bourdreaux, K. A., Dierks, G. J., Lee, C., Varrassi, G., ... & Kaye, A. D. (2021). Treatment of suprascapular nerve entrapment syndrome. Orthopedic reviews, 13(2).",
+   "Tan, E. T., Queler, S. C., Lin, B., Endo, Y., Burge, A. J., Sternberg, J., ... & Sneag, D. B. (2021). Improved nerve conspicuity with water-weighting and denoising in two-point Dixon magnetic resonance neurography. Magnetic resonance imaging, 79, 103-111.",
+   "Boyd, C. J., Singh, N. P., Robin, J. X., & Sharma, S. (2021). Compression neuropathies of the upper extremity: a review. Surgeries, 2(3), 320-334."
+  ],
+  [
+   "Ogasawara, C., Philbrick, B. D., & Adamson, D. C. (2021). Meningioma: A review of epidemiology, pathology, diagnosis, treatment, and future directions. Biomedicines, 9(3), 319.",
+   "Ugga, L., Perillo, T., Cuocolo, R., Stanzione, A., Romeo, V., Green, R., ... & Brunetti, A. (2021). Meningioma MRI radiomics and machine learning: Systematic review, quality score assessment, and meta-analysis. Neuroradiology, 63(8), 1293-1304.",
+   "Borch, J. D. S., Haslund-Vinding, J., Vilhardt, F., Maier, A. D., & Mathiesen, T. (2021). Meningioma–brain crosstalk: a scoping review. Cancers, 13(17), 4267.",
+   "Umana, Giuseppe Emmanuele, Gianluca Scalia, Atul Vats, Gianluca Pompili, Fabio Barone, Maurizio Passanisi, Francesca Graziano et al. \"Primary Extracranial Meningiomas of the Head and Neck.\" Life 11, no. 9 (2021): 942.",
+   "Maggio, I., Franceschi, E., Tosoni, A., Nunno, V. D., Gatto, L., Lodi, R., & Brandes, A. A. (2021). Meningioma: not always a benign tumor. A review of advances in the treatment of meningiomas. CNS oncology, 10(2), CNS72.",
+   "Gondar, R., Patet, G., Schaller, K., & Meling, T. R. (2021). Meningiomas and cognitive impairment after treatment: a systematic and narrative review. Cancers, 13(8), 1846.",
+   "Wang, L., Yu, J., Shu, D., Huang, B., Wang, Y., & Zhang, L. (2021). Primary endodermal hemangiopericytoma/solitary fibrous tumor of the cervical spine: a case report and literature review. BMC surgery, 21(1), 1-7.",
+   "Fan, Y., Liu, P., Li, Y., Liu, F., He, Y., Wang, L., ... & Wu, Z. (2021). Non-Invasive Preoperative Imaging Differential Diagnosis of Intracranial Hemangiopericytoma and Angiomatous Meningioma: A Novel Developed and Validated Multiparametric MRI-Based Clini-Radiomic Model. Frontiers in Oncology, 11.",
+   "Mehta, G. U., Kim, H. J., Gidley, P. W., Daniels, A. B., Miller, M. E., Lekovic, G. P., ... & Lonser, R. R. (2021). Endolymphatic Sac Tumor Screening and Diagnosis in von Hippel-Lindau Disease: A Consensus Statement. Journal of Neurological Surgery Part B: Skull Base."
+  ],
+  [
+   "Akkus, Z., Galimzianova, A., Hoogi, A., Rubin, D. L., & Erickson, B. J. (2017). Deep learning for brain MRI segmentation: state of the art and future directions. Journal of digital imaging, 30, 449-459.",
+   "Tasserie, J., & Lozano, A. M. (2022). 7T MRI for neuronavigation: toward better visualization during functional surgery. Journal of Neurosurgery, 137(5), 1262-1263.",
+   "Dalaqua, M., Nascimento, F. B. P. D., Miura, L. K., Reis, F., Garcia, M. R. T., & Barbosa Júnior, A. A. (2021). Magnetic resonance imaging of the cranial nerves in congenital, traumatic, and vascular diseases: a pictorial essay. Radiologia Brasileira, 54, 185-192.",
+   "Preim, B., & Saalfeld, P. (2018). A survey of virtual human anatomy education systems. Computers & Graphics, 71, 132-153.",
+   "Gilmore, A. D., Buser, N. J., & Hanson, J. L. (2021). Variations in structural MRI quality significantly impact commonly used measures of brain anatomy. Brain informatics, 8(1), 1-15.",
+   "Almudayni, A., Alharbi, M., Chowdhury, A., Ince, J., Alablani, F., Minhas, J. S., ... & Chung, E. M. L. (2023). Magnetic resonance imaging of the pulsing brain: a systematic review. Magnetic Resonance Materials in Physics, Biology and Medicine, 36(1), 3-14.",
+   "Herbet, G., & Duffau, H. (2020). Revisiting the functional anatomy of the human brain: toward a meta-networking theory of cerebral functions. Physiological Reviews, 100(3), 1181-1228.",
+   "Porras‐Gallo, M. I., Peña‐Meliáan, Á., Viejo, F., Hernáandez, T., Puelles, E., Echevarria, D., & Ramón Sañudo, J. (2019). Overview of the history of the cranial nerves: from Galen to the 21st century. The Anatomical Record, 302(3), 381-393.",
+   "Despotović, I., Goossens, B., & Philips, W. (2015). MRI segmentation of the human brain: challenges, methods, and applications. Computational and mathematical methods in medicine, 2015."
+  ],
+  [
+   "Gutierrez, J., Elkind, M. S., Dong, C., Di Tullio, M., Rundek, T., Sacco, R. L., & Wright, C. B. (2017). Brain perivascular spaces as biomarkers of vascular risk: results from the Northern Manhattan Study. American Journal of Neuroradiology, 38(5), 862-867.",
+   "Zhong, H., Zhang, W., Sun, S., & Bie, Y. (2022). MRI Findings in Trigeminal Neuralgia without Neurovascular Compression: Implications of Petrous Ridge and Trigeminal Nerve Angles. Korean Journal of Radiology, 23(8), 821.",
+   "Debette, S., Schilling, S., Duperron, M. G., Larsson, S. C., & Markus, H. S. (2019). Clinical significance of magnetic resonance imaging markers of vascular brain injury: a systematic review and meta-analysis. JAMA neurology, 76(1), 81-94.",
+   "Liang, C., Yang, L., Reichardt, W., Zhang, B., & Li, R. (2023). Different MRI-based methods for the diagnosis of neurovascular compression in trigeminal neuralgia or hemifacial spasm: A network meta-analysis. Journal of Clinical Neuroscience, 108, 19-24.",
+   "Zhou, X. Y., Tay, Z. W., Chandrasekharan, P., Elaine, Y. Y., Hensley, D. W., Orendorff, R., ... & Conolly, S. M. (2018). Magnetic particle imaging for radiation-free, sensitive and high-contrast vascular imaging and cell tracking. Current opinion in chemical biology, 45, 131-138.",
+   "Wymer, D. T., Patel, K. P., Burke III, W. F., & Bhatia, V. K. (2020). Phase-contrast MRI: physics, techniques, and clinical applications. Radiographics, 40(1), 122-140.",
+   "van Hespen, K. M., Zwanenburg, J. J., Dankbaar, J. W., Geerlings, M. I., Hendrikse, J., & Kuijf, H. J. (2021). An anomaly detection approach to identify chronic brain infarcts on MRI. Scientific Reports, 11(1), 7714.",
+   "Alexander, D. C., Dyrby, T. B., Nilsson, M., & Zhang, H. (2019). Imaging brain microstructure with diffusion MRI: practicality and applications. NMR in Biomedicine, 32(4), e3841."
+  ],
+  [
+   "Groh, M. M., & Herrera, J. (2009). A comprehensive review of hip labral tears. Current reviews in musculoskeletal medicine, 2, 105-117.",
+   "Larson, C. M. (2014). Sports hernia/athletic pubalgia: evaluation and management. Sports Health, 6(2), 139-144.",
+   "MORGE, R., JAGDALE, A., BHADANE, S., MOHGAONKAR, M., & KULKARNI, D. SPECTRUM OF MRI FINDINGS IN AVASCULAR NECROSIS OF HIP JOINT. European Journal of Molecular & Clinical Medicine, 9(04), 2022.",
+   "Schmaranzer, F., Kheterpal, A. B., & Bredella, M. A. (2021). Best practices: hip femoroacetabular impingement. AJR. American journal of roentgenology, 216(3), 585.",
+   "Jones, C. E., Mulpuri, K., Teo, T., Wilson, D. R., & d’Entremont, A. G. (2022). T1ρ and T2 MRI show hip cartilage damage in adolescents with healed Legg-Calvé-Perthes disease. Journal of Pediatric Orthopaedics B, 31(4), 344-349.",
+   "San Mak, M., & Teh, J. (2020). Magnetic resonance imaging of the hip: anatomy and pathology. Polish Journal of Radiology, 85(1), 489-508.",
+   "Zhang, P., Li, C., Wang, W., Zhang, B., Miao, W., & Liu, Y. (2022). 3.0 T MRI is more recommended to detect acetabular labral tears than MR Arthrography: an updated meta-analysis of diagnostic accuracy. Journal of Orthopaedic Surgery and Research, 17(1), 126.",
+   "Diviti, S., Gupta, N., Hooda, K., Sharma, K., & Lo, L. (2017). Morel-Lavallee lesions-review of pathophysiology, clinical findings, imaging findings and management. Journal of clinical and diagnostic research: JCDR, 11(4), TE01."
+  ],
+  [
+   "Gyftopoulos, S., Conroy, J., Koo, J., Jones, M., Miniaci, A., & Subhas, N. (2022). Imaging of patients suspected of SLAP tear: a cost-effectiveness study. American Journal of Roentgenology, 218(2), 227-233.",
+   "Maldonado, J. A., Puentes, D. A., Quintero, I. D., González-Estrada, O. A., & Villegas, D. F. (2023). Image-Based Numerical Analysis for Isolated Type II SLAP Lesions in Shoulder Abduction and External Rotation. Diagnostics, 13(10), 1819.",
+   "Calvi, M., Morgano, M. C., Tarallo, N., Basile, G., Calori, G. M., Callegari, L., & Genovese, E. A. (2022). MR arthrography: correlation between anatomic intraarticular variants of the long head of the biceps tendon (long head biceps tendon) and superior labral anterior to posterior (SLAP) lesions. Journal of Orthopaedics and Traumatology, 23(1), 13.",
+   "Stein, P., Wuennemann, F., Schneider, T., Zeifang, F., Burkholder, I., Weber, M. A., ... & Rehnitz, C. (2023). 3-Tesla T2 Mapping Magnetic Resonance Imaging for Evaluation of SLAP Lesions in Patients with Shoulder Pain: An Arthroscopy-Controlled Study. Journal of Clinical Medicine, 12(9), 3109.",
+   "Varacallo, M., Tapscott, D. C., & Mair, S. D. (2023). Superior labrum anterior posterior lesions. In StatPearls [Internet]. StatPearls Publishing.",
+   "Porta, M., Capelli, S., Caroli, A., Balbi, M., Surace, A., Serpi, F., ... & Aliprandi, A. (2022). Shoulder Magnetic Resonance Arthrography with the Internal and External Rotation Positions of the Humeral Head in the Evaluation of SLAP Lesions. Diagnostics, 12(9), 2230."
+  ],
+  [
+   "Pimenta, M., Vassalou, E. E., Cardoso-Marinho, B., Klontzas, M. E., Dimitri-Pinheiro, S., & Karantanas, A. H. (2023). The role of MRI and Ultrasonography in Diagnosis and Treatment of Glenohumeral Joint Adhesive Capsulitis. Mediterranean Journal of Rheumatology, 34(1), 7.",
+   "Culham, E., & Peat, M. (1993). Functional anatomy of the shoulder complex. Journal of Orthopaedic & Sports Physical Therapy, 18(1), 342-350.",
+   "Desai, S., Patil, N. G., & Kapoor, T. (2022). Coracoid Process—A Hub of Shoulder Ligaments. Indian Journal of Radiology and Imaging, 32(01), 005-009.",
+   "Iossifidis, A., Ibrahim, E., Mitra, P., Togias, G., & Petrou, C. (2020). Accuracy of magnetic resonance arthrography in the detection and classification of chronic anteroinferior labrum lesions. Int J Orthop Sci, 7(5), 1366-1369.",
+   "Laumonerie, P., Dalmas, Y., Tibbo, M. E., Robert, S., Faruch, M., Chaynes, P., ... & Mansat, P. (2020). Sensory innervation of the human shoulder joint: the three bridges to break. Journal of Shoulder and Elbow Surgery, 29(12), e499-e507.",
+   "Daniels, S. P., & Gyftopoulos, S. (2021, June). 3D MRI of the Shoulder. In Seminars in Musculoskeletal Radiology (Vol. 25, No. 03, pp. 480-487). 333 Seventh Avenue, 18th Floor, New York, NY 10001, USA: Thieme Medical Publishers, Inc..",
+   "Kim, J. H., & Lee, S. K. (2023). Delaminated Tears of the Rotator Cuff: MRI Interpretation with Clinical Correlation. Diagnostics, 13(6), 1133."
+  ],
+  [
+   "Cohen, D. A., Gursel, A. C., & Low, A. K. (2019). How coronal alignment affects distal femoral anatomy: an MRI-based comparison of varus and valgus knees. Journal of orthopaedic surgery and research, 14, 1-5.",
+   "Hayashi, D., Li, X., Murakami, A. M., Roemer, F. W., Trattnig, S., & Guermazi, A. (2018). Understanding magnetic resonance imaging of knee cartilage repair: a focus on clinical relevance. Cartilage, 9(3), 223-236.",
+   "Mandić, M., Rullman, E., Widholm, P., Lilja, M., Dahlqvist Leinhard, O., Gustafsson, T., & Lundberg, T. R. (2020). Automated assessment of regional muscle volume and hypertrophy using MRI. Scientific reports, 10(1), 2239.",
+   "Nacey, N. C., Geeslin, M. G., Miller, G. W., & Pierce, J. L. (2017). Magnetic resonance imaging of the knee: an overview and update of conventional and state of the art imaging. Journal of Magnetic Resonance Imaging, 45(5), 1257-1275.",
+   "de Lima, D. A., Helito, C. P., de Lima, L. L., de Castro Silva, D., Cavalcante, M. L. C., & Leite, J. A. D. (2019). Anatomy of the anterolateral ligament of the knee: a systematic review. Arthroscopy: The Journal of Arthroscopic & Related Surgery, 35(2), 670-681.",
+   "Grassi, A., Pizza, N., Lucidi, G. A., Macchiarola, L., Mosca, M., & Zaffagnini, S. (2021). Anatomy, magnetic resonance and arthroscopy of the popliteal hiatus of the knee: normal aspect and pathological conditions. EFORT Open Reviews, 6(1), 61-74.",
+   "Schmidt-Hebbel, A., Eggers, F., Schütte, V., Achtnich, A., & Imhoff, A. B. (2020). Patellar sleeve avulsion fracture in a patient with Sinding-Larsen-Johansson syndrome: a case report. BMC Musculoskeletal Disorders, 21(1), 1-7."
+  ],
+  [
+   "Bixby, S. D., Nichols, R. C., & Gholipour, A. Musculoskeletal and Body MRI in Children.",
+   "Yun, H. H., Kim, H. J., Jeong, M. S., Choi, Y. S., & Seo, J. Y. (2018). Changes of the growth plate in children: 3-dimensional magnetic resonance imaging analysis. Korean journal of pediatrics, 61(7), 226.",
+   "Caetano, A. P., Alves, P., Mendes, P., & Soares, E. (2019, May). Magnetic resonance imaging of the musculoskeletal system in the pediatric population–a university hospital experience. European Congress of Radiology-ESSR 2019.",
+   "Piccolo, C. L., Galluzzo, M., Ianniello, S., Trinci, M., Russo, A., Rossi, E., ... & Miele, V. (2017). Pediatric musculoskeletal injuries: role of ultrasound and magnetic resonance imaging. Musculoskeletal surgery, 101, 85-102.",
+   "Hirsch, F. W., Frahm, J., Sorge, I., Roth, C., Voit, D., & Gräfe, D. (2021). Real-time magnetic resonance imaging in pediatric radiology—new approach to movement and moving children. Pediatric Radiology, 51, 840-846.",
+   "Cabral, J., & Sinikumpu, J. (2023). Clinical considerations of anatomy and magnetic resonance imaging in pediatric meniscus tear, with imaging-based treatment options. Journal of Children's Orthopaedics, 17(1), 63-69.",
+   "Sandberg, J. K., Young, V. A., Syed, A. B., Yuan, J., Hu, Y., Sandino, C., ... & Vasanawala, S. (2021). Near‐silent and distortion‐free diffusion MRI in pediatric musculoskeletal disorders: Comparison with Echo planar imaging diffusion. Journal of Magnetic Resonance Imaging, 53(2), 504-513.",
+   "Mauer, M. A. D., Well, E. J. V., Herrmann, J., Groth, M., Morlock, M. M., Maas, R., & Säring, D. (2021). Automated age estimation of young individuals based on 3D knee MRI using deep learning. International Journal of Legal Medicine, 135, 649-663."
+  ]
+ ],
+ "MODULE_NAMES": [
+  "Spine",
+  "Degenerative Joint Disease",
+  "Intradural Intramedullary Lesions",
+  "Intradural Extramedullary Lesions",
+  "Extradural Lesions",
+  "The Carotid Space",
+  "Emergency Neuroimaging: Head, Neck & Spine",
+  "Demyelinating Disease",
+  "Emergency Neuroimaging: Brain",
+  "Nerve Imaging",
+  "Brain Tumors",
+  "Brain Anatomy",
+  "Neurovascular",
+  "Hip",
+  "SLAP Lesions",
+  "Shoulder",
+  "Knee",
+  "Pediatric MSK"
+ ],
+ "ROTATIONS": [
+  {
+   "ic": "pain",
+   "short": "Interventional Pain",
+   "title": "Interventional Pain Management",
+   "desc": "Observe spinal procedures and learn the decision pathways behind them: when a patient is referred for intervention, and how conservative care fits before and after.",
+   "chips": [
+    "Procedure observation",
+    "Referral decision pathways",
+    "Conservative care integration"
+   ]
+  },
+  {
+   "ic": "mri",
+   "short": "MRI Physics & Neuroradiology",
+   "title": "MRI Physics & Neuroradiology",
+   "desc": "How the images are made and read: scan acquisition, slice thickness and diagnostic logic, applied through the program's ABCDE imaging interpretation method.",
+   "chips": [
+    "Scan acquisition",
+    "Slice thickness",
+    "Diagnostic logic",
+    "ABCDE method"
+   ]
+  },
+  {
+   "ic": "ortho",
+   "short": "Orthopedic Extremity & Spine",
+   "title": "Orthopedic Extremity & Spine Surgery",
+   "desc": "Separate hip from lumbar pathology and follow the surgeon's reasoning through the operative decision frameworks used in orthopedic spine and extremity care.",
+   "chips": [
+    "Hip vs. lumbar pathology",
+    "Surgical reasoning",
+    "Operative decision frameworks"
+   ]
+  },
+  {
+   "ic": "neuro",
+   "short": "Neurosurgery & Emergency",
+   "title": "Neurosurgery & Emergency Medicine",
+   "desc": "Real-world triage and patient flow, and the neurosurgical view of how urgent a spine case is and when it crosses a referral threshold.",
+   "chips": [
+    "Clinical triage",
+    "Patient flow",
+    "Urgency & referral thresholds"
+   ]
+  },
+  {
+   "ic": "fm",
+   "short": "Family & Internal Medicine",
+   "title": "Family & Internal Medicine",
+   "desc": "Where spine complaints first show up: in primary care visits and within chronic disease management, and what that means for co-management.",
+   "chips": [
+    "Primary-care presentation",
+    "Chronic disease management",
+    "Co-management"
+   ]
+  },
+  {
+   "ic": "team",
+   "short": "Spine-Care Team Integration",
+   "title": "Spine-Care Team Integration",
+   "cap": true,
+   "desc": "The capstone. Fellows work as the spine-care navigator on the interdisciplinary team, bridging conservative, interventional and surgical services.",
+   "chips": [
+    "Navigator role",
+    "Interdisciplinary team",
+    "Conservative · interventional · surgical"
+   ]
+  }
+ ],
+ "ICONS": {
+  "pain": [
+   "M3 21l7-7",
+   "M14.5 3.5l6 6",
+   "M17.5 6.5l-9 9-3-3 9-9",
+   "M9 12l3 3"
+  ],
+  "mri": [
+   "M3.5 12a8.5 8.5 0 1 0 17 0a8.5 8.5 0 1 0 -17 0",
+   "M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0",
+   "M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"
+  ],
+  "ortho": [
+   "M7 4.5a2.2 2.2 0 1 0-2.6 2.6L13 15.7a2.2 2.2 0 1 0 2.6 2.6",
+   "M17 19.5a2.2 2.2 0 1 0 2.6-2.6L11 8.3a2.2 2.2 0 1 0-2.6-2.6"
+  ],
+  "neuro": [
+   "M12 4v16",
+   "M12 7c-3 0-5 1.5-5 4",
+   "M12 7c3 0 5 1.5 5 4",
+   "M12 12c-2.5 0-4 1.5-4 4",
+   "M12 12c2.5 0 4 1.5 4 4"
+  ],
+  "fm": [
+   "M5 3v6a4 4 0 0 0 8 0V3",
+   "M9 13v2a5 5 0 0 0 10 0v-2",
+   "M17 11a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"
+  ],
+  "team": [
+   "M9.5 6a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0",
+   "M2.5 17a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0",
+   "M16.5 17a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0",
+   "M10.5 8l-4 6.5M13.5 8l4 6.5M7.5 17h9"
+  ]
+ }
+}
