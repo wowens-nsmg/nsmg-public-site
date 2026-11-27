@@ -190,7 +190,7 @@ home_body = f'''
    <article class="cert">
     <div class="pace">{STAR} Two-year post-doctoral fellowship for doctors of chiropractic</div>
     <h3><a href="fellowship-in-spine-management/">Fellowship in Spine Management</a></h3>
-    <p>Imaging mastery in Year One, then a year of clinical rotations. Interprofessional rotations, embedded in affiliated health systems, train chiropractors to work as spine-care navigators alongside radiology, orthopedics, neurosurgery and pain management.</p>
+    <p>Imaging mastery in Year One, then a year of clinical rotations. Interprofessional rotations, coordinated within your own community with the help of NSMG, train chiropractors to work as spine-care navigators alongside radiology, orthopedics, neurosurgery and pain management.</p>
     <ul class="facts"><li><b>2</b> years, post-doctoral</li><li><b>18</b> imaging modules in Year One</li><li><b>6</b> clinical rotations in Year Two</li><li><b>30+</b> peer-reviewed articles per rotation</li></ul>
     <a class="btn navy" href="fellowship-in-spine-management/">About the Fellowship in Spine Management</a>
    </article>
@@ -374,11 +374,11 @@ FS_FAQ = [
     ('Who is the fellowship for?',
      'Doctors of chiropractic: established community-based practitioners who want advanced imaging credentials, medicolegal standing and working relationships with health systems; recent graduates who want structured post-doctoral training; and chiropractors pursuing teaching roles, expert-witness work, or spine-care leadership in health systems and academic institutions.'),
     ('How do the clinical rotations work?',
-     'There are six rotations. Each runs one day a week for six weeks inside an affiliated health system. Fellows observe live procedures, consults and clinical decision-making on site, work through 30+ peer-reviewed articles per rotation with evidence summaries, and apply what they learn to their own patients the same week.'),
+     'There are six rotations. Each runs one day a week for six weeks with a clinical host in your own community, coordinated with the help of NSMG. Fellows observe live procedures, consults and clinical decision-making on site, work through 30+ peer-reviewed articles per rotation with evidence summaries, and apply what they learn to their own patients the same week.'),
     ('Can I keep my practice running during the fellowship?',
      'Yes. Fellows keep their own practice going between on-site days, which is the point: what they see on clinical rotations goes straight into how they manage their patients.'),
     ('Where do the rotations take place?',
-     'Rotations take place under formal affiliation agreements in affiliated health systems. Training sites vary by region and are set by each affiliation agreement, and rotation order and host sites depend on the fellow\'s affiliated health system.'),
+     'Rotations are coordinated within your own community with the help of NSMG. NSMG works with you to arrange host sites near your practice, so rotation order and host sites depend on the clinical services available in your area.'),
     ('What credentials do fellows earn?',
      'A Fellowship Completion Certificate from NSMG; the Advanced Imaging Certification, with its continuing-education hours; documented completion of six interprofessional clinical rotations; CV entry documentation for every completed module and rotation; and a qualification pathway toward FSBT Fellowship designation.'),
 ]
@@ -391,7 +391,7 @@ fs_body = f'''
     <nav class="crumb" aria-label="Breadcrumb"><a href="../">Home</a> › Certifications › Fellowship in Spine Management</nav>
     <div class="pace">{STAR} Two-year post-doctoral fellowship for doctors of chiropractic</div>
     <h1>Fellowship in Spine Management</h1>
-    <p class="lede">Imaging mastery in Year One, then a year of clinical rotations. Interprofessional rotations, embedded in affiliated health systems, train chiropractors to work as spine-care navigators alongside radiology, orthopedics, neurosurgery and pain management.</p>
+    <p class="lede">Imaging mastery in Year One, then a year of clinical rotations. Interprofessional rotations, coordinated within your own community with the help of NSMG, train chiropractors to work as spine-care navigators alongside radiology, orthopedics, neurosurgery and pain management.</p>
     <div class="btns"><a class="btn gold" href="{SCHED}">Schedule a consultation</a><a class="btn ghost" href="#rotations">See the clinical rotations</a></div>
    </div>
    <div class="stats"><div><b>2</b><span>years, post-doctoral</span></div><div><b>18</b><span>imaging modules in Year One</span></div><div><b>6</b><span>clinical rotations in Year Two</span></div><div><b>30+</b><span>peer-reviewed articles per rotation</span></div></div>
@@ -413,7 +413,7 @@ fs_body = f'''
    <div class="phasecard y1"><div class="tag">Year One · Phase I</div><h3>Advanced Imaging Certification</h3><p>The complete 18-module Spine Management Pathway, developed with Medality™ and delivered on MRI Online.</p>
     <ul><li>Spine, neurologic and musculoskeletal MRI, taught by fellowship-trained radiologists</li><li>Didactic lecture and DICOM case review in every module</li><li>A research review and 350-word evidence summary per module</li><li>5 MRI case submissions per module, building a 90-case portfolio</li></ul>
     <a class="arrowlink" href="../advanced-imaging-certification/">View the full imaging curriculum →</a></div>
-   <div class="phasecard"><div class="tag">Year Two · Phase II</div><h3>Interprofessional Clinical Rotations</h3><p>Six rotations inside affiliated health systems, in the settings where spine patients are actually managed.</p>
+   <div class="phasecard"><div class="tag">Year Two · Phase II</div><h3>Interprofessional Clinical Rotations</h3><p>Six rotations coordinated within your own community with the help of NSMG, in the settings where spine patients are actually managed.</p>
     <ul><li>One on-site day per week for six weeks per rotation</li><li>Live procedures observed, then applied to your own patients that same week</li><li>30+ peer-reviewed articles per rotation, with evidence summaries</li><li>Ends with the fellow working as a spine-care navigator on the team</li></ul>
     <a class="arrowlink dark" href="#rotations">See the six rotations →</a></div>
   </div>
@@ -424,7 +424,7 @@ fs_body = f'''
  <div class="wrap">
   <p class="eyebrow">Year Two · Clinical rotations</p>
   <h2>How every rotation works</h2>
-  <p class="sub">Each rotation runs one day a week for six weeks inside an affiliated health system. Fellows keep their own practice going between on-site days, which is the point: what they see on clinical rotations goes straight into how they manage their patients.</p>
+  <p class="sub">Each rotation runs one day a week for six weeks with a clinical host in your own community, coordinated with the help of NSMG. Fellows keep their own practice going between on-site days, which is the point: what they see on clinical rotations goes straight into how they manage their patients.</p>
   <div class="how">
    <div><b>1</b><h3>Observe on site</h3><p>One day a week with the host service, observing live procedures, consults and clinical decision-making.</p></div>
    <div><b>2</b><h3>Read the evidence</h3><p>Work through the rotation's 30+ peer-reviewed articles and write evidence summaries that tie the literature to what you saw.</p></div>
@@ -432,7 +432,7 @@ fs_body = f'''
   </div>
   <div class="weeks" aria-label="Six-week rotation cadence: one on-site day each week">{weeks}</div>
   <div class="rotlist">{rotlist}</div>
-  <p class="note">Rotation order and host sites depend on the fellow's affiliated health system.</p>
+  <p class="note">Rotation order and host sites depend on the clinical services available in the fellow's community.</p>
  </div>
 </section>
 
@@ -446,21 +446,21 @@ fs_body = f'''
 <section class="band">
  <div class="wrap">
   <p class="eyebrow">Clinical training sites</p>
-  <h2>Training inside major health systems</h2>
-  <p class="sub">Rotations take place under formal affiliation agreements, so fellows complete their clinical rotations in integrated health systems and contribute real clinical value while they build their credentialing portfolio.</p>
+  <h2>Training in your own community</h2>
+  <p class="sub">Rotations are coordinated within your own community with the help of NSMG, so fellows train with local clinical teams, build working relationships close to their own practice and contribute real clinical value while they build their credentialing portfolio.</p>
   <div class="sites">
-   <div class="site"><b>Integrated health systems</b><span>Multidisciplinary spine programs</span></div>
-   <div class="site"><b>Academic medical centers</b><span>Teaching and research settings</span></div>
-   <div class="site"><b>Interventional &amp; surgical services</b><span>Pain management, orthopedics, neurosurgery</span></div>
-   <div class="site"><b>Primary care networks</b><span>Family and internal medicine</span></div>
+   <div class="site"><b>Pain management practices</b><span>Interventional spine procedures</span></div>
+   <div class="site"><b>Imaging centers</b><span>MRI and radiology services</span></div>
+   <div class="site"><b>Orthopedic &amp; neurosurgery offices</b><span>Spine and extremity surgical care</span></div>
+   <div class="site"><b>Primary care practices</b><span>Family and internal medicine</span></div>
   </div>
-  <p class="note">Training sites vary by region and are set by each affiliation agreement.</p>
+  <p class="note">Host sites vary by community; NSMG helps each fellow identify and arrange them.</p>
   <div class="agree">
    <div><h3>The educational institution</h3>Sets the curriculum, tracks fellow milestones and assesses competency.</div>
    <div><h3>The clinical host</h3>Provides the on-site setting, supervision and access to the clinical team.</div>
    <div><h3>The fellow</h3>Meets attendance, reading, evidence-summary and case requirements for every rotation.</div>
   </div>
-  <p class="note">Each affiliation agreement defines these responsibilities, mirroring the structure of formal medical training agreements.</p>
+  <p class="note">Each host site's arrangement, coordinated with NSMG, defines these responsibilities, mirroring the structure of formal medical training agreements.</p>
  </div>
 </section>
 
@@ -490,7 +490,7 @@ fs_body = f'''
 <section class="band tintband cta">
  <div class="wrap">
   <h2>Train where spine patients are managed</h2>
-  <p>Enrollment starts with a conversation about your goals, your practice and the affiliated health system closest to you.</p>
+  <p>Enrollment starts with a conversation about your goals, your practice and the clinical hosts in your community.</p>
   <div class="btns center"><a class="btn gold" href="{SCHED}">Schedule a consultation</a><a class="btn navy" href="{AIC_PORTAL}">Start with the imaging year</a><a class="btn navy" href="{FS_PORTAL}">View in the Member Portal</a></div>
   <p class="contact">Questions? <a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="tel:{PHONE_TEL}">{PHONE}</a></p>
  </div>
@@ -498,14 +498,14 @@ fs_body = f'''
 
 FS_URL = SITE + '/fellowship-in-spine-management/'
 fs_ld = {'@context': 'https://schema.org', '@type': 'EducationalOccupationalProgram', '@id': FS_URL + '#program', 'name': 'Fellowship in Spine Management', 'url': FS_URL,
-         'description': 'A two-year post-doctoral fellowship for doctors of chiropractic: the Advanced Imaging Certification in Year One, then six interprofessional clinical rotations inside affiliated health systems in Year Two.',
+         'description': 'A two-year post-doctoral fellowship for doctors of chiropractic: the Advanced Imaging Certification in Year One, then six interprofessional clinical rotations in Year Two, coordinated within the fellow\'s own community with the help of NSMG.',
          'provider': PROVIDER, 'timeToComplete': 'P2Y', 'educationalProgramMode': 'Blended', 'programPrerequisites': 'Doctor of chiropractic',
          'occupationalCategory': 'Chiropractor',
          'educationalCredentialAwarded': {'@type': 'EducationalOccupationalCredential', 'name': 'Fellowship Completion Certificate, NSMG', 'credentialCategory': 'Certificate'},
          'hasCourse': [{'@type': 'Course', '@id': AIC_URL + '#course', 'name': 'Advanced Imaging Certification', 'url': AIC_URL, 'description': 'Year One: the complete 18-module Spine Management Pathway.', 'provider': PROVIDER}]
                       + [{'@type': 'Course', 'name': f'Rotation {i + 1}: {r["title"]}', 'description': r['desc'], 'provider': PROVIDER} for i, r in enumerate(ROTS)]}
 fs = page('fellowship-in-spine-management/index.html', 'Fellowship in Spine Management | National Spine Management Group',
-          'A two-year post-doctoral fellowship for chiropractors: the Advanced Imaging Certification, then interprofessional clinical rotations inside major health systems.',
+          'A two-year post-doctoral fellowship for chiropractors: the Advanced Imaging Certification, then clinical rotations coordinated in your own community with NSMG.',
           fs_body, [fs_ld, faq_ld(FS_FAQ), crumbs_ld([('Home', SITE + '/'), ('Fellowship in Spine Management', FS_URL)])], 'fs')
 
 # ---------------------------------------------------------------- write
@@ -528,7 +528,7 @@ NSMG offers two post-doctoral programs for doctors of chiropractic. Members sign
 ## Programs
 
 - [Advanced Imaging Certification]({AIC_URL}): The Spine Management Pathway, an 18-module MRI curriculum for doctors of chiropractic built on case-based DICOM review, developed by NSMG in collaboration with Medality™. {TOTAL_H} CE hours across three six-module courses (Course I: Spine & Spinal Lesions, {C_H[0]} hours; Course II: Emergency & Brain Neuroimaging, {C_H[1]} hours; Course III: Neurovascular & Musculoskeletal, {C_H[2]} hours). Each module combines didactic lecture with DICOM review, a research review with a 350-word summary, and 5 MRI case submissions (90 cases in total). Approved for continuing education through the FCLB PACE program; NSMG is an FCLB PACE provider. Take all 18 modules at once or one course at a time.
-- [Fellowship in Spine Management]({FS_URL}): A two-year post-doctoral fellowship. Year One is the Advanced Imaging Certification; Year Two is six interprofessional clinical rotations (Interventional Pain Management; MRI Physics & Neuroradiology; Orthopedic Extremity & Spine Surgery; Neurosurgery & Emergency Medicine; Family & Internal Medicine; Spine-Care Team Integration capstone), each one on-site day per week for six weeks inside an affiliated health system, with 30+ peer-reviewed articles per rotation. Credentials include a Fellowship Completion Certificate from NSMG and a qualification pathway toward FSBT Fellowship designation.
+- [Fellowship in Spine Management]({FS_URL}): A two-year post-doctoral fellowship. Year One is the Advanced Imaging Certification; Year Two is six interprofessional clinical rotations (Interventional Pain Management; MRI Physics & Neuroradiology; Orthopedic Extremity & Spine Surgery; Neurosurgery & Emergency Medicine; Family & Internal Medicine; Spine-Care Team Integration capstone), each one on-site day per week for six weeks, coordinated within the fellow's own community with the help of NSMG, with 30+ peer-reviewed articles per rotation. Credentials include a Fellowship Completion Certificate from NSMG and a qualification pathway toward FSBT Fellowship designation.
 
 ## Links
 
