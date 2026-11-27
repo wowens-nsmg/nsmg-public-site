@@ -291,7 +291,7 @@ footer.site-footer nav { display: flex; flex-direction: column; gap: 6px; }
   .row em { grid-column: 1 / -1; }
   .yr { grid-template-columns: minmax(0, 1fr); }
   .weeks { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .logocard { max-width: 360px; }
+  .logocard { max-width: 360px; width: 100%; margin-inline: auto; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
