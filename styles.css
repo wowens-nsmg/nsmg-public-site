@@ -114,6 +114,7 @@ header.site-header nav > a:not(.btn):hover, .menu summary:hover, header.site-hea
 .how > div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
 .how b { font-family: var(--heading); font-size: 30px; color: var(--gold); display: block; line-height: 1; }
 .how h3 { margin: 10px 0 6px; }
+.how h3 a { overflow-wrap: anywhere; }
 .how p { margin: 0; color: var(--muted); }
 .obj { list-style: none; padding: 0; margin: 28px 0 0; columns: 2; column-gap: 40px; }
 .obj li { break-inside: avoid; padding: 12px 0 12px 34px; border-top: 1px solid var(--line); position: relative; }

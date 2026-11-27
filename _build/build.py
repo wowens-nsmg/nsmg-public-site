@@ -13,6 +13,11 @@ LOGIN = 'https://nsmg.my.site.com/nsmg/s/login'
 SCHED = 'https://nsmg.my.site.com/schedule/s/flow/CreateAppointment'
 AIC_PORTAL = 'https://nsmg.my.site.com/nsmg/s/advanced-imaging-certification'
 FS_PORTAL = 'https://nsmg.my.site.com/nsmg/s/fellowship-in-spine-management'
+# 2027 National Conference links, copied from the portal homepage components (nsmgConferenceCard buttonUrl / hotelUrl).
+# The portal stores the registration link as a site path; the portal base is prefixed here.
+CONF_REGISTER = 'https://nsmg.my.site.com/nsmg/s/learning-activity-detail-standard?ltui__urlRecordId=a1jRc000006eNwvIAE&ltui__urlRedirect=learning-activity-detail-standard'
+CONF_HOTEL = 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1794501919101&key=GRP&app=resvlink&_branch_match_id=1652725825054783307&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi0uy0wtN7LPTLE1NLc0MTUwtDS0NDQwVMtOrbR1DwpQSywosAWpysnMy1arK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQB9I7QtYQAAAA%3D%3D'
+LINKEDIN = 'https://www.linkedin.com/in/william-owens-dc-fsbt-58a85719/'
 ADDR = {'street': '1275 Main Street, Suite 110', 'city': 'Buffalo', 'region': 'NY', 'zip': '14209'}
 PHONE, PHONE_TEL = '716-228-3847', '+17162283847'
 EMAIL = os.environ.get('NSMG_CONTACT_EMAIL') or 'EMAIL-NOT-SET'
@@ -52,11 +57,19 @@ def faq_html(faq, title):
 </section>'''
 
 
-def page(path, title, desc, body, lds, active=''):
+def page(path, title, desc, body, lds, active='', not_found=False):
     depth = path.count('/')
     root = '../' * depth
     canon = SITE + '/' + (path.rsplit('index.html', 1)[0])
     cur = lambda key: ' aria-current="page"' if key == active else ''
+    if not_found:
+        # GitHub Pages serves 404.html at whatever path was requested, so links resolve against a fixed base:
+        # "/" on the custom domain, "/nsmg-public-site/" on the temporary github.io address.
+        head_extra = ('<base href="/">\n<script>if(/\\.github\\.io$/.test(location.hostname))'
+                      'document.querySelector("base").href="/nsmg-public-site/";</script>\n'
+                      '<meta name="robots" content="noindex">')
+    else:
+        head_extra = f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="index, follow">'
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -64,8 +77,7 @@ def page(path, title, desc, body, lds, active=''):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
-<link rel="canonical" href="{canon}">
-<meta name="robots" content="index, follow">
+{head_extra}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{ORG}">
 <meta property="og:title" content="{E(title)}">
@@ -94,6 +106,9 @@ def page(path, title, desc, body, lds, active=''):
      <a href="{root}fellowship-in-spine-management/"{cur('fs')}>Fellowship in Spine Management</a>
     </div>
    </details>
+   <a href="{root}national-conference/"{cur('conf')}>Conference</a>
+   <a href="{root}about/"{cur('about')}>About</a>
+   <a href="{root}contact/"{cur('contact')}>Contact</a>
    <a href="{PORTAL}">Member Portal</a>
    <a class="btn gold sm" href="{LOGIN}">Member Login</a>
   </nav>
@@ -115,6 +130,9 @@ def page(path, title, desc, body, lds, active=''):
   <nav aria-label="Footer">
    <a href="{root}advanced-imaging-certification/">Advanced Imaging Certification</a>
    <a href="{root}fellowship-in-spine-management/">Fellowship in Spine Management</a>
+   <a href="{root}national-conference/">2027 National Conference</a>
+   <a href="{root}about/">About Dr. Owens</a>
+   <a href="{root}contact/">Contact</a>
    <a href="{PORTAL}">Member Portal</a>
    <a href="{LOGIN}">Member Login</a>
    <a href="{SCHED}">Schedule a Consultation</a>
@@ -508,13 +526,174 @@ fs = page('fellowship-in-spine-management/index.html', 'Fellowship in Spine Mana
           'A two-year post-doctoral fellowship for chiropractors: the Advanced Imaging Certification, then clinical rotations coordinated in your own community with NSMG.',
           fs_body, [fs_ld, faq_ld(FS_FAQ), crumbs_ld([('Home', SITE + '/'), ('Fellowship in Spine Management', FS_URL)])], 'fs')
 
+# ---------------------------------------------------------------- NATIONAL CONFERENCE
+CONF_URL = SITE + '/national-conference/'
+CONF_DAYS = [('Friday', 'March 5', 'Meet-and-greet happy hour', '4–6 PM', '2027-03-05T16:00:00-05:00', '2027-03-05T18:00:00-05:00'),
+             ('Saturday', 'March 6', 'Full-day session', '8:30 AM–5 PM', '2027-03-06T08:30:00-05:00', '2027-03-06T17:00:00-05:00'),
+             ('Sunday', 'March 7', 'Morning session', '9 AM–12 PM', '2027-03-07T09:00:00-05:00', '2027-03-07T12:00:00-05:00')]
+CONF_PLACE = {'@type': 'Place', 'name': 'Fort Lauderdale, FL', 'address': {'@type': 'PostalAddress', 'addressLocality': 'Fort Lauderdale', 'addressRegion': 'FL', 'addressCountry': 'US'}}
+conf_days_html = ''.join(f'<div><b>{E(d)}</b><h3>{E(what)}</h3><p>{E(date)}, 2027 · {E(t)}</p></div>' for d, date, what, t, _, _ in CONF_DAYS)
+conf_body = f'''
+<section class="hero band">
+ <div class="wrap">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="../">Home</a> › 2027 National Conference</nav>
+  <div class="pace">{STAR} Registration open</div>
+  <h1>2027 NSMG National Conference</h1>
+  <p class="lede big">March 5–7, 2027 · Fort Lauderdale, FL</p>
+  <p class="lede">Friday meet-and-greet happy hour, a Saturday full-day session and a Sunday morning session. Open to members and non-member doctors.</p>
+  <div class="btns"><a class="btn gold" href="{E(CONF_REGISTER)}">Register</a><a class="btn ghost" href="{E(CONF_HOTEL)}">Book Discounted Hotel Room</a></div>
+ </div>
+</section>
+
+<section class="band tintband">
+ <div class="wrap">
+  <p class="eyebrow">Schedule</p>
+  <h2>Three days in Fort Lauderdale</h2>
+  <p class="sub">All times are local (Eastern).</p>
+  <div class="how">{conf_days_html}</div>
+ </div>
+</section>
+
+<section class="band cta">
+ <div class="wrap">
+  <h2>Save your seat</h2>
+  <p>Open to members and non-member doctors. Register through the NSMG Member Portal, then book your room at the discounted conference rate.</p>
+  <div class="btns center"><a class="btn gold" href="{E(CONF_REGISTER)}">Register</a><a class="btn navy" href="{E(CONF_HOTEL)}">Book Discounted Hotel Room</a></div>
+ </div>
+</section>'''
+conf_ld = {'@context': 'https://schema.org', '@type': 'Event', '@id': CONF_URL + '#event', 'name': '2027 NSMG National Conference', 'url': CONF_URL,
+           'description': 'The 2027 National Spine Management Group National Conference in Fort Lauderdale, FL: a Friday meet-and-greet happy hour, a Saturday full-day session and a Sunday morning session. Open to members and non-member doctors.',
+           'startDate': CONF_DAYS[0][4], 'endDate': CONF_DAYS[-1][5], 'eventStatus': 'https://schema.org/EventScheduled',
+           'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode', 'location': CONF_PLACE, 'image': SITE + '/images/nsmg-share.png',
+           'organizer': PROVIDER, 'audience': {'@type': 'Audience', 'audienceType': 'Doctors of chiropractic, members and non-members'},
+           'offers': {'@type': 'Offer', 'url': CONF_REGISTER, 'availability': 'https://schema.org/InStock'},
+           'subEvent': [{'@type': 'Event', 'name': f'{d}: {what}', 'startDate': s, 'endDate': e, 'location': CONF_PLACE,
+                         'eventStatus': 'https://schema.org/EventScheduled', 'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode'} for d, _, what, _, s, e in CONF_DAYS]}
+conf = page('national-conference/index.html', '2027 NSMG National Conference | March 5–7, 2027 · Fort Lauderdale, FL',
+            'The 2027 National Spine Management Group National Conference, March 5–7, 2027 in Fort Lauderdale, FL. Open to members and non-member doctors. Register and book the discounted hotel room.',
+            conf_body, [conf_ld, crumbs_ld([('Home', SITE + '/'), ('2027 National Conference', CONF_URL)])], 'conf')
+
+# ---------------------------------------------------------------- ABOUT
+ABOUT_URL = SITE + '/about/'
+about_body = f'''
+<section class="hero band">
+ <div class="wrap">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="../">Home</a> › About</nav>
+  <p class="kicker">About NSMG</p>
+  <h1>William J. Owens Jr., DC, FSBT</h1>
+  <p class="lede big">President &amp; CEO, National Spine Management Group (since 2020)</p>
+  <p class="lede">A practicing clinician and educator: 28 years treating spine injury in Buffalo, and the director of NSMG's post-doctoral spine programs.</p>
+  <div class="btns"><a class="btn gold" href="{SCHED}">Book a Call</a><a class="btn ghost" href="{LINKEDIN}">LinkedIn profile</a></div>
+ </div>
+</section>
+
+<section class="band tintband">
+ <div class="wrap">
+  <div class="pillars">
+   <div><span class="tag">Practice</span><h3>Clinical care</h3><p>28 years treating spine injury in Buffalo, and still practicing at Greater Buffalo Accident and Injury Chiropractic.</p></div>
+   <div><span class="tag">Educate</span><h3>Program director</h3><p>Directs the <a href="../fellowship-in-spine-management/">Fellowship in Spine Management</a>, the Spine Management Residency Program and the <a href="../advanced-imaging-certification/">Advanced Imaging Certification</a>.</p></div>
+   <div><span class="tag">Teach</span><h3>Faculty and physician educator</h3><p>Adjunct faculty in Parker University's MS in Interprofessional Spine Management, and the only chiropractor to complete the Royal College of Physicians Certified Physician Educator Program.</p></div>
+   <div><span class="tag">Research</span><h3>Published work</h3><p>Author of a 2026 peer-reviewed study in the North American Spine Society Journal and of IEEE engineering-in-medicine papers.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <p class="eyebrow">Medico-legal</p>
+  <h2>Consulting and court testimony</h2>
+  <p class="sub">Dr. Owens provides medico-legal consulting and testifies in court on spine injury.</p>
+ </div>
+</section>
+
+<section class="band tintband cta">
+ <div class="wrap">
+  <h2>Talk with Dr. Owens and the NSMG team</h2>
+  <p>Book a call about the Fellowship, the Advanced Imaging Certification or NSMG membership.</p>
+  <div class="btns center"><a class="btn gold" href="{SCHED}">Book a Call</a><a class="btn navy" href="../contact/">Contact NSMG</a></div>
+ </div>
+</section>'''
+person_ld = {'@context': 'https://schema.org', '@type': 'Person', '@id': ABOUT_URL + '#person', 'name': 'William J. Owens Jr.', 'honorificSuffix': 'DC, FSBT',
+             'url': ABOUT_URL, 'sameAs': [LINKEDIN], 'jobTitle': 'President & CEO',
+             'worksFor': {'@type': 'EducationalOrganization', '@id': SITE + '/#organization', 'name': ORG, 'url': SITE + '/'},
+             'description': 'President & CEO of National Spine Management Group since 2020; 28 years treating spine injury in Buffalo; directs the Fellowship in Spine Management, the Spine Management Residency Program and the Advanced Imaging Certification.',
+             'affiliation': [{'@type': 'CollegeOrUniversity', 'name': 'Parker University'}],
+             'workLocation': {'@type': 'Place', 'address': {'@type': 'PostalAddress', 'addressLocality': 'Buffalo', 'addressRegion': 'NY', 'addressCountry': 'US'}},
+             'knowsAbout': ['Spine injury', 'Spine imaging', 'Medico-legal consulting', 'Interprofessional spine management']}
+about = page('about/index.html', 'William J. Owens Jr., DC, FSBT | About National Spine Management Group',
+             'About Dr. William J. Owens Jr., DC, FSBT: President & CEO of National Spine Management Group, 28 years treating spine injury in Buffalo, and director of the Fellowship in Spine Management and the Advanced Imaging Certification.',
+             about_body, [person_ld, crumbs_ld([('Home', SITE + '/'), ('About', ABOUT_URL)])], 'about')
+
+# ---------------------------------------------------------------- CONTACT
+CONTACT_URL = SITE + '/contact/'
+contact_body = f'''
+<section class="hero band">
+ <div class="wrap">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="../">Home</a> › Contact</nav>
+  <h1>Contact National Spine Management Group</h1>
+  <p class="lede">Questions about the Fellowship, the Advanced Imaging Certification, the National Conference or membership? Book a call or reach us directly.</p>
+  <div class="btns"><a class="btn gold" href="{SCHED}">Book a Call</a></div>
+ </div>
+</section>
+
+<section class="band tintband">
+ <div class="wrap">
+  <div class="how">
+   <div><b>Phone</b><h3><a href="tel:{PHONE_TEL}">{PHONE}</a></h3><p>Call our team.</p></div>
+   <div><b>Email</b><h3><a href="mailto:{EMAIL}">{EMAIL}</a></h3><p>We reply by email.</p></div>
+   <div><b>Office</b><h3>{ADDR['street']}</h3><p>{ADDR['city']}, {ADDR['region']} {ADDR['zip']}</p></div>
+  </div>
+  <p class="note">Locations: Buffalo, NY and Lehi, UT.</p>
+ </div>
+</section>
+
+<section class="band cta">
+ <div class="wrap">
+  <h2>Prefer to talk it through?</h2>
+  <p>Book a call with our team at a time that suits you.</p>
+  <div class="btns center"><a class="btn gold" href="{SCHED}">Book a Call</a><a class="btn navy" href="{LOGIN}">Member Login</a></div>
+ </div>
+</section>'''
+contact_ld = {'@context': 'https://schema.org', '@type': 'ContactPage', 'url': CONTACT_URL, 'name': 'Contact National Spine Management Group',
+              'mainEntity': {'@type': 'EducationalOrganization', '@id': SITE + '/#organization', 'name': ORG, 'url': SITE + '/', 'telephone': PHONE_TEL, 'email': EMAIL,
+                             'address': {'@type': 'PostalAddress', 'streetAddress': ADDR['street'], 'addressLocality': ADDR['city'], 'addressRegion': ADDR['region'], 'postalCode': ADDR['zip'], 'addressCountry': 'US'},
+                             'contactPoint': {'@type': 'ContactPoint', 'telephone': PHONE_TEL, 'email': EMAIL, 'contactType': 'customer service', 'areaServed': 'US'}}}
+contact = page('contact/index.html', 'Contact | National Spine Management Group',
+               'Contact National Spine Management Group: 1275 Main Street, Suite 110, Buffalo, NY 14209 · 716-228-3847. Offices in Buffalo, NY and Lehi, UT. Book a call with our team.',
+               contact_body, [contact_ld, crumbs_ld([('Home', SITE + '/'), ('Contact', CONTACT_URL)])], 'contact')
+
+# ---------------------------------------------------------------- 404
+nf_body = f'''
+<section class="hero band">
+ <div class="wrap">
+  <p class="kicker">Page not found</p>
+  <h1>We couldn't find that page</h1>
+  <p class="lede">The page may have moved. These are the most-visited places on the NSMG site.</p>
+  <div class="btns"><a class="btn gold" href="./">Go to the home page</a><a class="btn ghost" href="{PORTAL}">Visit the Member Portal</a><a class="btn ghost" href="{LOGIN}">Member Login</a></div>
+ </div>
+</section>
+
+<section class="band tintband">
+ <div class="wrap">
+  <div class="pillars">
+   <div><span class="tag">Certification</span><h3><a href="advanced-imaging-certification/">Advanced Imaging Certification</a></h3><p>An 18-module MRI curriculum for doctors of chiropractic.</p></div>
+   <div><span class="tag">Fellowship</span><h3><a href="fellowship-in-spine-management/">Fellowship in Spine Management</a></h3><p>A two-year post-doctoral fellowship.</p></div>
+   <div><span class="tag">Event</span><h3><a href="national-conference/">2027 National Conference</a></h3><p>March 5–7, 2027 · Fort Lauderdale, FL</p></div>
+   <div><span class="tag">Contact</span><h3><a href="contact/">Contact NSMG</a></h3><p>{PHONE} · Book a call with our team.</p></div>
+  </div>
+ </div>
+</section>'''
+not_found = page('404.html', 'Page not found | National Spine Management Group',
+                 'The page you were looking for could not be found on the National Spine Management Group site.', nf_body, [], '', not_found=True)
+
 # ---------------------------------------------------------------- write
-for p, s in [('index.html', home), ('advanced-imaging-certification/index.html', aic), ('fellowship-in-spine-management/index.html', fs)]:
+for p, s in [('index.html', home), ('advanced-imaging-certification/index.html', aic), ('fellowship-in-spine-management/index.html', fs),
+             ('national-conference/index.html', conf), ('about/index.html', about), ('contact/index.html', contact), ('404.html', not_found)]:
     os.makedirs(os.path.dirname(os.path.join(OUT, p)) or OUT, exist_ok=True)
     open(os.path.join(OUT, p), 'w').write(s)
 
 open(os.path.join(OUT, 'sitemap.xml'), 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
-    f'  <url><loc>{SITE}{u}</loc><lastmod>2026-11-26</lastmod></url>\n' for u in ['/', '/advanced-imaging-certification/', '/fellowship-in-spine-management/']) + '</urlset>\n')
+    f'  <url><loc>{SITE}{u}</loc><lastmod>2026-11-27</lastmod></url>\n' for u in ['/', '/advanced-imaging-certification/', '/fellowship-in-spine-management/', '/national-conference/', '/about/', '/contact/']) + '</urlset>\n')
 
 bots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Claude-SearchBot', 'Google-Extended', 'Bingbot', 'Googlebot']
 open(os.path.join(OUT, 'robots.txt'), 'w').write('# National Spine Management Group public site\n# All crawlers, including AI search and assistant crawlers, are welcome.\n\nUser-agent: *\nAllow: /\n\n' + ''.join(f'User-agent: {b}\nAllow: /\n\n' for b in bots) + f'Sitemap: {SITE}/sitemap.xml\n')
@@ -530,15 +709,24 @@ NSMG offers two post-doctoral programs for doctors of chiropractic. Members sign
 - [Advanced Imaging Certification]({AIC_URL}): The Spine Management Pathway, an 18-module MRI curriculum for doctors of chiropractic built on case-based DICOM review, developed by NSMG in collaboration with Medality™. {TOTAL_H} CE hours across three six-module courses (Course I: Spine & Spinal Lesions, {C_H[0]} hours; Course II: Emergency & Brain Neuroimaging, {C_H[1]} hours; Course III: Neurovascular & Musculoskeletal, {C_H[2]} hours). Each module combines didactic lecture with DICOM review, a research review with a 350-word summary, and 5 MRI case submissions (90 cases in total). Approved for continuing education through the FCLB PACE program; NSMG is an FCLB PACE provider. Take all 18 modules at once or one course at a time.
 - [Fellowship in Spine Management]({FS_URL}): A two-year post-doctoral fellowship. Year One is the Advanced Imaging Certification; Year Two is six interprofessional clinical rotations (Interventional Pain Management; MRI Physics & Neuroradiology; Orthopedic Extremity & Spine Surgery; Neurosurgery & Emergency Medicine; Family & Internal Medicine; Spine-Care Team Integration capstone), each one on-site day per week for six weeks, coordinated within the fellow's own community with the help of NSMG, with 30+ peer-reviewed articles per rotation. Credentials include a Fellowship Completion Certificate from NSMG and a qualification pathway toward FSBT Fellowship designation.
 
+## Events
+
+- [2027 NSMG National Conference]({CONF_URL}): March 5–7, 2027, Fort Lauderdale, FL. Friday meet-and-greet happy hour 4–6 PM, Saturday full-day session 8:30 AM–5 PM, Sunday morning session 9 AM–12 PM (Eastern). Open to members and non-member doctors. [Register]({CONF_REGISTER}).
+
+## About
+
+- [William J. Owens Jr., DC, FSBT]({ABOUT_URL}): President & CEO of National Spine Management Group since 2020. 28 years treating spine injury in Buffalo; still practicing at Greater Buffalo Accident and Injury Chiropractic. Directs the Fellowship in Spine Management, the Spine Management Residency Program and the Advanced Imaging Certification. Adjunct faculty, Parker University MS in Interprofessional Spine Management; the only chiropractor to complete the Royal College of Physicians Certified Physician Educator Program. Medico-legal consulting and court testimony. Author of a 2026 peer-reviewed North American Spine Society Journal study and IEEE engineering-in-medicine papers. [LinkedIn]({LINKEDIN}).
+
 ## Links
 
 - [Home]({SITE}/)
+- [Contact]({CONTACT_URL})
 - [Member Portal]({PORTAL})
 - [Member Login]({LOGIN})
 - [Schedule a consultation]({SCHED})
 
 ## Contact
 
-National Spine Management Group, {ADDR['street']}, {ADDR['city']}, {ADDR['region']} {ADDR['zip']}. Phone {PHONE}. Email {EMAIL}.
+National Spine Management Group, {ADDR['street']}, {ADDR['city']}, {ADDR['region']} {ADDR['zip']}. Phone {PHONE}. Email {EMAIL}. Locations: Buffalo, NY and Lehi, UT.
 ''')
 print('written to', OUT, '| contact email', 'SET' if EMAIL != 'EMAIL-NOT-SET' else 'NOT SET (placeholder)')
