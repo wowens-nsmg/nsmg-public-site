@@ -90,6 +90,7 @@ def page(path, title, desc, body, lds, active='', not_found=False):
 <link rel="icon" href="{root}images/nsmg-icon.png">
 <link rel="apple-touch-icon" href="{root}images/nsmg-icon.png">
 <link rel="stylesheet" href="{root}styles.css">
+<script>document.documentElement.classList.add('js');</script>
 {chr(10).join(ld(x) for x in lds)}
 </head>
 <body>
@@ -97,7 +98,9 @@ def page(path, title, desc, body, lds, active='', not_found=False):
 <header class="site-header">
  <div class="wrap bar">
   <a class="brand" href="{root or './'}"><img src="{root}images/nsmg-logo.png" alt="" width="40" height="48"><span><b>National Spine Management Group</b><small>Leaders in Academic Spinal Care</small></span></a>
-  <nav aria-label="Main">
+  <nav aria-label="Main" class="main-nav">
+   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>
+   <div class="nav-links" id="nav-links">
    <a href="{root or './'}"{cur('home')}>Home</a>
    <details class="menu">
     <summary>Certifications</summary>
@@ -110,6 +113,7 @@ def page(path, title, desc, body, lds, active='', not_found=False):
    <a href="{root}about/"{cur('about')}>About</a>
    <a href="{root}contact/"{cur('contact')}>Contact</a>
    <a href="{PORTAL}">Member Portal</a>
+   </div>
    <a class="btn gold sm" href="{LOGIN}">Member Login</a>
   </nav>
  </div>
@@ -144,6 +148,16 @@ def page(path, title, desc, body, lds, active='', not_found=False):
 // Close the Certifications menu when clicking elsewhere or pressing Escape (the menu works without this).
 document.addEventListener('click',function(e){{document.querySelectorAll('details.menu[open]').forEach(function(d){{if(!d.contains(e.target))d.removeAttribute('open');}});}});
 document.addEventListener('keydown',function(e){{if(e.key==='Escape')document.querySelectorAll('details.menu[open]').forEach(function(d){{d.removeAttribute('open');}});}});
+// Small screens: the Menu button shows and hides the nav links. The links are always in the HTML;
+// without JavaScript they are simply shown, and on wide screens the button is hidden.
+(function(){{
+  var nav=document.querySelector('.main-nav'), btn=nav&&nav.querySelector('.nav-toggle');
+  if(!btn)return;
+  function setOpen(open){{nav.classList.toggle('is-open',open);btn.setAttribute('aria-expanded',open?'true':'false');}}
+  btn.addEventListener('click',function(){{setOpen(btn.getAttribute('aria-expanded')!=='true');}});
+  document.addEventListener('keydown',function(e){{if(e.key==='Escape'&&nav.classList.contains('is-open')){{setOpen(false);btn.focus();}}}});
+  document.addEventListener('click',function(e){{if(nav.classList.contains('is-open')&&!nav.contains(e.target))setOpen(false);}});
+}})();
 </script>
 </body>
 </html>

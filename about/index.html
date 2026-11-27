@@ -19,6 +19,7 @@
 <link rel="icon" href="../images/nsmg-icon.png">
 <link rel="apple-touch-icon" href="../images/nsmg-icon.png">
 <link rel="stylesheet" href="../styles.css">
+<script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -87,7 +88,9 @@
 <header class="site-header">
  <div class="wrap bar">
   <a class="brand" href="../"><img src="../images/nsmg-logo.png" alt="" width="40" height="48"><span><b>National Spine Management Group</b><small>Leaders in Academic Spinal Care</small></span></a>
-  <nav aria-label="Main">
+  <nav aria-label="Main" class="main-nav">
+   <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>
+   <div class="nav-links" id="nav-links">
    <a href="../">Home</a>
    <details class="menu">
     <summary>Certifications</summary>
@@ -100,6 +103,7 @@
    <a href="../about/" aria-current="page">About</a>
    <a href="../contact/">Contact</a>
    <a href="https://nsmg.my.site.com/nsmg/s/">Member Portal</a>
+   </div>
    <a class="btn gold sm" href="https://nsmg.my.site.com/nsmg/s/login">Member Login</a>
   </nav>
  </div>
@@ -171,6 +175,16 @@
 // Close the Certifications menu when clicking elsewhere or pressing Escape (the menu works without this).
 document.addEventListener('click',function(e){document.querySelectorAll('details.menu[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open');});});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('details.menu[open]').forEach(function(d){d.removeAttribute('open');});});
+// Small screens: the Menu button shows and hides the nav links. The links are always in the HTML;
+// without JavaScript they are simply shown, and on wide screens the button is hidden.
+(function(){
+  var nav=document.querySelector('.main-nav'), btn=nav&&nav.querySelector('.nav-toggle');
+  if(!btn)return;
+  function setOpen(open){nav.classList.toggle('is-open',open);btn.setAttribute('aria-expanded',open?'true':'false');}
+  btn.addEventListener('click',function(){setOpen(btn.getAttribute('aria-expanded')!=='true');});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('is-open')){setOpen(false);btn.focus();}});
+  document.addEventListener('click',function(e){if(nav.classList.contains('is-open')&&!nav.contains(e.target))setOpen(false);});
+})();
 </script>
 </body>
 </html>

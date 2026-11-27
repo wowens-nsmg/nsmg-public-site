@@ -59,9 +59,9 @@ header.site-header { background: var(--navy); color: #fff; border-bottom: 3px so
 .brand img { width: 40px; height: auto; background: #f7f3ea; border-radius: 8px; padding: 4px; }
 .brand b { display: block; font: 700 18px/1.15 var(--heading); }
 .brand small { display: block; color: var(--gold); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
-header.site-header nav { display: flex; align-items: center; gap: 6px 22px; flex-wrap: wrap; font-size: 16px; }
-header.site-header nav > a:not(.btn), .menu summary { text-decoration: none; color: #fff; padding: 6px 0; border-bottom: 2px solid transparent; }
-header.site-header nav > a:not(.btn):hover, .menu summary:hover, header.site-header nav a[aria-current] { border-bottom-color: var(--gold); }
+header.site-header nav, .nav-links { display: flex; align-items: center; gap: 6px 22px; flex-wrap: wrap; font-size: 16px; }
+.nav-links > a, .menu summary { text-decoration: none; color: #fff; padding: 6px 0; border-bottom: 2px solid transparent; }
+.nav-links > a:hover, .menu summary:hover, .nav-links a[aria-current] { border-bottom-color: var(--gold); }
 .menu { position: relative; }
 .menu summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px; }
 .menu summary::-webkit-details-marker { display: none; }
@@ -70,6 +70,43 @@ header.site-header nav > a:not(.btn):hover, .menu summary:hover, header.site-hea
 .menu-list { position: absolute; top: calc(100% + 10px); left: -16px; min-width: 300px; background: #fff; border-radius: 10px; box-shadow: 0 14px 40px rgba(12, 35, 64, .25); padding: 8px; border-top: 3px solid var(--gold); }
 .menu-list a { display: block; padding: 10px 14px; color: var(--navy); text-decoration: none; border-radius: 6px; font-weight: 700; }
 .menu-list a:hover, .menu-list a[aria-current] { background: var(--tint); }
+
+/* Menu button (small screens only; shown once the page script has run, see .js below) */
+.nav-toggle { display: none; align-items: center; gap: 10px; min-height: 44px; min-width: 44px; padding: 0 14px; border: 1px solid rgba(255, 255, 255, .6); border-radius: 8px; background: transparent; color: #fff; font: 700 15px/1 var(--body); cursor: pointer; }
+.nav-toggle:hover { border-color: #fff; background: rgba(255, 255, 255, .08); }
+.nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .2s ease, background-color .2s ease; }
+.nav-toggle-bars { position: relative; }
+.nav-toggle-bars::before, .nav-toggle-bars::after { content: ""; position: absolute; left: 0; }
+.nav-toggle-bars::before { top: -6px; }
+.nav-toggle-bars::after { top: 6px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { transform: translateY(-6px) rotate(-45deg); }
+
+/* Collapsed header: only with JavaScript, so the links are never hidden without a way to show them */
+@media (max-width: 900px) {
+  .js .bar { flex-wrap: nowrap; }
+  .js header.site-header nav.main-nav { flex-wrap: nowrap; gap: 10px; }
+  .js .nav-toggle { display: inline-flex; }
+  .js .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 6px var(--gutter) 18px; background: var(--navy); border-bottom: 3px solid var(--gold); box-shadow: 0 18px 30px rgba(0, 0, 0, .28); }
+  .js .main-nav.is-open .nav-links { display: flex; }
+  .js .nav-links > a, .js .nav-links .menu summary { display: flex; padding: 13px 2px; font-size: 17px; border-bottom: 1px solid rgba(255, 255, 255, .12); }
+  .js .nav-links > a:hover, .js .nav-links .menu summary:hover { border-bottom-color: rgba(255, 255, 255, .12); color: var(--gold); }
+  .js .nav-links > a[aria-current] { color: var(--gold); border-bottom-color: rgba(255, 255, 255, .12); }
+  .js .nav-links .menu summary::after { margin-left: auto; }
+  .js .menu-list { position: static; transform: none; min-width: 0; margin: 4px 0 8px; box-shadow: none; }
+}
+@media (max-width: 560px) {
+  .js .bar { gap: 10px; min-height: 64px; }
+  .js .brand { gap: 8px; min-width: 0; }
+  .js .brand img { width: 34px; }
+  .js .brand b { font-size: 15px; max-width: 132px; }
+  .js .brand small { display: none; }
+  .js header.site-header nav.main-nav { gap: 8px; flex-shrink: 0; }
+  .js .nav-toggle { padding: 0; width: 44px; justify-content: center; }
+  .js .nav-toggle-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .js header.site-header .btn.sm { padding: 0 12px; font-size: 14px; }
+}
 
 /* Hero (navy band) */
 .hero { background: radial-gradient(120% 90% at 85% 10%, #1d4275 0%, var(--navy) 55%, #081a31 100%); color: #fff; }
@@ -258,9 +295,9 @@ footer.site-footer nav { display: flex; flex-direction: column; gap: 6px; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
-  .bar { justify-content: center; }
-  header.site-header nav { justify-content: center; gap: 4px 18px; }
-  .menu-list { left: 50%; transform: translateX(-50%); min-width: 270px; }
+  html:not(.js) .bar { justify-content: center; }
+  html:not(.js) header.site-header nav, html:not(.js) .nav-links { justify-content: center; gap: 4px 18px; }
+  html:not(.js) .menu-list { left: 50%; transform: translateX(-50%); min-width: 270px; }
   .paths, .pillars, .sites { grid-template-columns: minmax(0, 1fr); }
   .thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .rots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
