@@ -57,6 +57,15 @@ def faq_html(faq, title):
 </section>'''
 
 
+SHARE_MAP = {
+    'index.html': 'share-home.png',
+    'advanced-imaging-certification/index.html': 'share-advanced-imaging-certification.png',
+    'fellowship-in-spine-management/index.html': 'share-fellowship.png',
+    'national-conference/index.html': 'share-national-conference.png',
+    'about/index.html': 'share-about.png',
+    'contact/index.html': 'share-contact.png',
+}
+
 def page(path, title, desc, body, lds, active='', not_found=False):
     depth = path.count('/')
     root = '../' * depth
@@ -83,7 +92,8 @@ def page(path, title, desc, body, lds, active='', not_found=False):
 <meta property="og:title" content="{E(title)}">
 <meta property="og:description" content="{E(desc)}">
 <meta property="og:url" content="{canon}">
-<meta property="og:image" content="{SITE}/images/nsmg-share.png">
+<meta property="og:image" content="{SITE}/images/share/{SHARE_MAP.get(path, 'share-home.png')}">
+<meta property="og:image:alt" content="{E(title)}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
